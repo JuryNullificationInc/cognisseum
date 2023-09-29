@@ -17,48 +17,35 @@ namespace webapi.DTOs
 
         public long Group { get; set; }
 
-        public Phase Phase { get; set; }
+        [AllowNull]
+        public float? IonicRadius { get; set; }
 
         [AllowNull]
-        public CrystalStructure MostStableCrystal { get; set; }
-
-        public ElementType Type { get; set; }
+        public double? AtomicRadius { get; set; }
 
         [AllowNull]
-        public float IonicRadius { get; set; }
+        public double? Electronegativity { get; set; }
 
         [AllowNull]
-        public double AtomicRadius { get; set; }
+        public double? FirstIonizationPotential { get; set; }
 
         [AllowNull]
-        public double Electronegativity { get; set; }
+        public double? Density { get; set; }
 
         [AllowNull]
-        public double FirstIonizationPotential { get; set; }
+        public double? MeltingPoint { get; set; }
 
         [AllowNull]
-        public double Density { get; set; }
+        public double? BoilingPoint { get; set; }
 
         [AllowNull]
-        public double MeltingPoint { get; set; }
+        public long? Isotopes { get; set; }
 
         [AllowNull]
-        public double BoilingPoint { get; set; }
+        public float? SpecificHeatCapacity { get; set; }
 
         [AllowNull]
-        public long Isotopes { get; set; }
-
-        [AllowNull]
-        public string Discoverer { get; set; }
-
-        [AllowNull]
-        public DateTime YearOfDiscovery { get; set; }
-
-        [AllowNull]
-        public float SpecificHeatCapacity { get; set; }
-
-        [AllowNull]
-        public string ElectronConfiguration { get; set; }
+        public string? ElectronConfiguration { get; set; }
 
         public long DisplayRow { get; set; }
 

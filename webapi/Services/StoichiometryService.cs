@@ -4,28 +4,29 @@ using Microsoft.IdentityModel.Tokens;
 using NCDK;
 using NCDK.Smiles;
 using System.ComponentModel.DataAnnotations;
+using webapi.Services;
 
 namespace cognisseum.Services
 {
-    public class StoichiometryService
+    public class StoichiometryService : DbServiceBase
     {
 
-        public StoichiometryService(CgnContext db) => Db = db;
+        public StoichiometryService(CgnContext db) : base(db) { }
 
         public float MolecularMass(string smiles)
         {
             var sp = new SmilesParser();
             var mol = sp.ParseSmiles(smiles);
-            var buckets = new Dictionary<IAtom, int>();
+            var buckets = new Dictionary<string, int>();
             foreach (var m in mol.Atoms)
             {
-                if (buckets.ContainsKey(m))
+                if (buckets.ContainsKey(m.Symbol))
                 {
-                    buckets[m] += 1;
+                    buckets[m.Symbol] += 1;
                 }
                 else
                 {
-                    buckets[m] = 1;
+                    buckets[m.Symbol] = 1;
                 }
             }
 
@@ -33,7 +34,7 @@ namespace cognisseum.Services
 
             foreach (var a in buckets.Keys)
             {
-                var e = Db.Elements.AsQueryable().Where(x => x.Symbol == a.Symbol).SingleOrDefault();
+                var e = GetElementBySymbol(a);
                 if (e != null)
                 {
                     result += (float)e.AtomicWeight * buckets[a];

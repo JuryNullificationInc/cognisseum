@@ -1,5 +1,7 @@
 ﻿using cognisseum.Entities;
 using Microsoft.EntityFrameworkCore;
+using webapi.Controllers;
+using webapi.Services;
 
 namespace webapi
 {
@@ -21,11 +23,15 @@ namespace webapi
                 {
                     // force to add another /swagger to fix issue
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Cognisseum 1.0");
-                    c.RoutePrefix = "swgr";
                 });
+
                 app.UseHttpsRedirection();
-                app.UseAuthorization();
                 app.UseRouting();
+                app.UseAuthorization();
+                app.UseEndpoints(e =>
+                {
+                    e.MapControllers();
+                });
             }
         }
 
@@ -38,6 +44,9 @@ namespace webapi
             services.AddControllers();
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
+
+            var di = new ControllerDI(services);
+            services = di.InjectDependencies();
         }
     }
 }

@@ -14,11 +14,8 @@ namespace webapi.Controllers
         }
 
         [HttpGet("molar-mass")]
-        public float GetMolecularMass([Required] string smiles)
-        {
-            Console.WriteLine("Calling stoich...");
-            return Srvc.MolecularMass(smiles);
-        }
+        public ActionResult<float?> GetMolecularMass([Required] string smiles)
+            => Ok(Srvc.MolecularMass(smiles));
 
         public StoichiometryService Srvc { get; set; }
     }
