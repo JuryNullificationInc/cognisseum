@@ -1,0 +1,156 @@
+[
+    {
+        "name": "Nonmetal",
+        "acronym": "nmn",
+        "Id": 1,
+        "Guid": "af89504d-ac3f-4ee3-8594-a92b5cb7a646",
+        "TimeAdded": "2023-09-21T05:09:18.010701+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T05:09:18.010701+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+        "name": "Noble Gas",
+        "acronym": "nbl",
+        "Id": 2,
+        "Guid": "06c587fe-f5fa-4022-a42e-bbbe8319fc8b",
+        "TimeAdded": "2023-09-21T05:09:18.010701+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T05:09:18.010701+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+        "name": "Alkali Metal",
+        "acronym": "mlk",
+        "Id": 3,
+        "Guid": "17565823-480c-4815-a8ab-5ae311dc26b1",
+        "TimeAdded": "2023-09-21T05:09:18.010701+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T05:09:18.010701+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+        "name": "Alkaline Earth Metal",
+        "acronym": "mea",
+        "Id": 4,
+        "Guid": "475b66ae-cc17-4e7f-93fd-2e7a75a0c01d",
+        "TimeAdded": "2023-09-21T05:09:18.010701+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T05:09:18.010701+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+        "name": "Metalloid",
+        "acronym": "mld",
+        "Id": 5,
+        "Guid": "67b76bd1-97f9-4d5b-81cd-defa8f13f981",
+        "TimeAdded": "2023-09-21T05:09:18.010701+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T05:09:18.010701+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+        "name": "Halogen",
+        "acronym": "hgn",
+        "Id": 6,
+        "Guid": "b5bc3a77-d9db-40a1-9a5a-be57704c4990",
+        "TimeAdded": "2023-09-21T05:09:18.010701+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T05:09:18.010701+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+        "name": "Metal",
+        "acronym": "mtl",
+        "Id": 7,
+        "Guid": "d03c6b63-858f-4933-bbee-415832e17fea",
+        "TimeAdded": "2023-09-21T05:09:18.010701+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T05:09:18.010701+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+        "name": "Transition Metal",
+        "acronym": "mtt",
+        "Id": 8,
+        "Guid": "7e52eea6-1435-4603-9aa8-1197f61e3582",
+        "TimeAdded": "2023-09-21T05:09:18.010701+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T05:09:18.010701+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+        "name": "Lanthanide",
+        "acronym": "lan",
+        "Id": 9,
+        "Guid": "238fd4ad-2978-442a-8c4c-e047533af97b",
+        "TimeAdded": "2023-09-21T05:09:18.010701+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T05:09:18.010701+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+        "name": "Actinide",
+        "acronym": "act",
+        "Id": 10,
+        "Guid": "c47f95d2-fab5-4b32-9277-e2cf4412a5c5",
+        "TimeAdded": "2023-09-21T05:09:18.010701+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T05:09:18.010701+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+        "name": "Transactinide",
+        "acronym": "txa",
+        "Id": 11,
+        "Guid": "0eeb6f30-9539-4e6d-a8f7-89d52d77ee5c",
+        "TimeAdded": "2023-09-21T05:09:18.010701+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T05:09:18.010701+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+      "name": "Not In Any Classification",
+      "acronym": "N/A",
+      "Id": 12,
+      "Guid": "a113012d-35bb-4049-a7b4-2e47f20b479c",
+      "TimeAdded": "2023-09-21T05:09:18.010701+00:00",
+      "UserAddedId": 1,
+      "TimeModified": "2023-09-21T05:09:18.010701+00:00",
+      "UserModifiedId": 1,
+      "IsActive": true
+    },
+    {
+      "name": "Common Organic Element",
+      "acronym": "coe",
+      "Id": 13,
+      "Guid": "403c98f2-95c7-45e8-bfaa-f934f2e24583",
+      "TimeAdded": "2023-09-21T05:09:18.010701+00:00",
+      "UserAddedId": 1,
+      "TimeModified": "2023-09-21T05:09:18.010701+00:00",
+      "UserModifiedId": 1,
+      "IsActive": true
+    },
+    {
+      "name": "Uncommon Organic Element",
+      "acronym": "uoe",
+      "Id": 14,
+      "Guid": "a2c960ae-e1fc-454a-adb7-ffc392d63967",
+      "TimeAdded": "2023-09-21T05:09:18.010701+00:00",
+      "UserAddedId": 1,
+      "TimeModified": "2023-09-21T05:09:18.010701+00:00",
+      "UserModifiedId": 1,
+      "IsActive": true
+    }
+]

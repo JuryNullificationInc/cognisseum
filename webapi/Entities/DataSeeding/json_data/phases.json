@@ -1,0 +1,6 @@
+[
+  {"name": "gas", "acronym": "gas", "Id": 1, "Guid": "be51fa4e-2b63-4fcb-a010-e0f3c5104bf1", "TimeAdded": "2023-09-21T05:01:38.278635+00:00", "UserAddedId": 1, "TimeModified": "2023-09-21T05:01:38.279517+00:00", "UserModifiedId": 1, "IsActive": true},
+  {"name": "solid", "acronym": "sol", "Id": 2, "Guid": "719d5b25-fb2d-4d4a-8242-9be505b408fe", "TimeAdded": "2023-09-21T05:01:38.279517+00:00", "UserAddedId": 1, "TimeModified": "2023-09-21T05:01:38.279517+00:00", "UserModifiedId": 1, "IsActive": true},
+  {"name": "liquid", "acronym": "liq", "Id": 3, "Guid": "a0eed403-6037-484f-a285-430e64fd4edd", "TimeAdded": "2023-09-21T05:01:38.279517+00:00", "UserAddedId": 1, "TimeModified": "2023-09-21T05:01:38.279517+00:00", "UserModifiedId": 1, "IsActive": true},
+  {"name": "artificial", "acronym": "atl", "Id": 4, "Guid": "05db4a57-6adc-4ff9-a05e-d1ec951c7789", "TimeAdded": "2023-09-21T05:01:38.279517+00:00", "UserAddedId": 1, "TimeModified": "2023-09-21T05:01:38.279517+00:00", "UserModifiedId": 1, "IsActive": true}
+]

@@ -1,0 +1,112 @@
+[
+    {
+        "acronym": "N/A",
+        "name": "Not Applicable",
+        "Id": 1,
+        "Guid": "040627c5-e1bd-4da0-b248-7ec23c10e84c",
+        "TimeAdded": "2023-09-21T04:51:35.568782+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T04:51:35.568782+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+        "acronym": "bcc",
+        "name": "Body-Centered Cubic",
+        "Id": 2,
+        "Guid": "c5c4bb23-a965-4550-a75d-b1138fe1cae5",
+        "TimeAdded": "2023-09-21T04:51:35.568782+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T04:51:35.568782+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+        "acronym": "hex",
+        "name": "Hexagonal",
+        "Id": 3,
+        "Guid": "b5bd3be7-3669-42c9-890f-5e6586c041da",
+        "TimeAdded": "2023-09-21T04:51:35.568782+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T04:51:35.568782+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+        "acronym": "rho",
+        "name": "Rhombohedral",
+        "Id": 4,
+        "Guid": "eeb2cea1-9b84-451a-ab38-d968c4373ad4",
+        "TimeAdded": "2023-09-21T04:51:35.568782+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T04:51:35.568782+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+        "acronym": "fcc",
+        "name": "Face-Centered Cubic",
+        "Id": 5,
+        "Guid": "9ebc048e-63c3-4a9d-b219-c63742d317fc",
+        "TimeAdded": "2023-09-21T04:51:35.568782+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T04:51:35.568782+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+        "acronym": "cub",
+        "name": "Cubic",
+        "Id": 6,
+        "Guid": "a7126788-59ca-4527-9e81-503fabcba4c8",
+        "TimeAdded": "2023-09-21T04:51:35.568782+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T04:51:35.568782+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+        "acronym": "orth",
+        "name": "Orthorhombic",
+        "Id": 7,
+        "Guid": "c7c7e003-9a9e-4643-8389-8ebe9f18c00e",
+        "TimeAdded": "2023-09-21T04:51:35.568782+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T04:51:35.568782+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+        "acronym": "tet",
+        "name": "Tetragonal",
+        "Id": 8,
+        "Guid": "7df8cf23-963c-4867-ae0e-49b9f02b0f56",
+        "TimeAdded": "2023-09-21T04:51:35.568782+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T04:51:35.568782+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+        "acronym": "gas",
+        "name": "Gas",
+        "Id": 9,
+        "Guid": "eff2967c-bed2-4ce5-b748-ab5bfa4febd3",
+        "TimeAdded": "2023-09-21T04:51:35.568782+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T04:51:35.568782+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    },
+    {
+        "acronym": "mno",
+        "name": "Monoclinic",
+        "Id": 10,
+        "Guid": "5f170852-d220-4cb1-a750-80c4f2704212",
+        "TimeAdded": "2023-09-21T04:51:35.568782+00:00",
+        "UserAddedId": 1,
+        "TimeModified": "2023-09-21T04:51:35.568782+00:00",
+        "UserModifiedId": 1,
+        "IsActive": true
+    }
+]
