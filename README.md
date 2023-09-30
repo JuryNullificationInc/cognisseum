@@ -12,18 +12,12 @@ This is a huge passion project on my end as I begin to study for an MS in Chemis
 
 # Roadmap
 
-[ ] Acquire, clean, & integrate datasets
-
-	[x] Periodic Table
+* Acquire, clean, & integrate datasets
+	* Periodic Table (DOING)
+ 	*  $K_{i}$ binding database (DOING)
  
-	[?] $K_{i}$ binding database
- 
-	[ ] 
- 
-[ ] Add pages for data discovery
-
-	[ ] A biography per element discovery team for the common organic elements
- 
-	[ ] A page for exploring the periodic table
+* Add pages for data discovery
+	* A biography per element discovery team for the common organic elements
+ 	* A page for exploring the periodic table
  
 
