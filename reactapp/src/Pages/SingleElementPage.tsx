@@ -1,7 +1,16 @@
+import { Component } from "react";
+import { ElementTypeProps } from "../components/elementTypePill";
+
 type MaybeNumber = number | null;
 type MaybeString = string | null;
 
-export class Element {
+export interface NameAcronymWithImageProps {
+	name: string;
+	acronym: string;
+	imagePath: string;
+}
+
+export interface ElementProps {
 	atomicNumber: number;
 	elementName: string;
 	symbol: string;
@@ -20,30 +29,22 @@ export class Element {
 	electronConfiguration: MaybeString;
 	displayRow: number;
 	displayColumn: number;
+	classifications: ElementTypeProps[];
+	phase: NameAcronymWithImageProps;
+	crystalConfig: NameAcronymWithImageProps;
+}
 
-	constructor(atomicNumber: number, elementName: string, symbol: string, atomicWeight: number,
-		period: number, group: number, ionicRadius: MaybeNumber, atomicRadius: MaybeNumber,
-		electronegativity: MaybeNumber, firstIonizationPotential: MaybeNumber, density: MaybeNumber,
-		meltingPoint: MaybeNumber, boilingPoint: MaybeNumber, isotopes: MaybeNumber, specificHeatCapacity: MaybeNumber,
-		electronConfiguration: MaybeString, displayRow: number, displayColumn: number)
-	{
-		this.atomicNumber = atomicNumber;
-		this.elementName = elementName;
-		this.symbol = symbol;
-		this.atomicWeight = atomicWeight;
-		this.period = period;
-		this.group = group;
-		this.ionicRadius = ionicRadius;
-		this.atomicRadius = atomicRadius;
-		this.electronegativity = electronegativity;
-		this.firstIonizationPotential = firstIonizationPotential;
-		this.density = density;
-		this.meltingPoint = meltingPoint;
-		this.boilingPoint = boilingPoint;
-		this.isotopes = isotopes;
-		this.specificHeatCapacity = specificHeatCapacity;
-		this.electronConfiguration = electronConfiguration;
-		this.displayRow = displayRow;
-		this.displayColumn = displayColumn;
+export default class App extends Component {
+	static displayName = App.name;
+
+	constructor(props: ElementProps) {
+		super(props);
+		this.state = {
+
+		}
+	}
+
+	async populateElementData() {
+		const response = await fetch('https://localhost:7004/api/element/element-by-atomic-number')
 	}
 }

@@ -2,7 +2,7 @@
 using System.Diagnostics.CodeAnalysis;
 using webapi.Entities.EntityBases;
 
-namespace cognisseum.Entities
+namespace webapi.Entities.Entities
 {
     public class Element : AuditableBase
     {

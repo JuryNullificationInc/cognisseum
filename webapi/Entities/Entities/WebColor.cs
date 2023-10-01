@@ -1,6 +1,6 @@
 ﻿using webapi.Entities.EntityBases;
 
-namespace webapi.Entities
+namespace webapi.Entities.Entities
 {
     public class WebColor : AuditableBase
     {

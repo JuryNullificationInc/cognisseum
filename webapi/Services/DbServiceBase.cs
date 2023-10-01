@@ -1,7 +1,7 @@
 ﻿using cognisseum.Entities;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using webapi.DTOs;
-using webapi.Entities;
+using webapi.Entities.Entities;
 using webapi.Exceptions;
 
 namespace webapi.Services
@@ -22,8 +22,8 @@ namespace webapi.Services
         public ElementPhaseDto PhaseToDto(Phase phase)
             => new()
             {
-                PhaseName = phase.Name,
-                PhaseAcronym = phase.Acronym,
+                Name = phase.Name,
+                Acronym = phase.Acronym,
                 ImagePath = phase.ImagePath,
             };
 

@@ -1,8 +1,7 @@
-﻿using cognisseum.Entities;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 using webapi.Entities.EntityBases;
 
-namespace webapi.Entities
+namespace webapi.Entities.Entities
 {
     public class ElementClassification : ElementLinkBase
     {

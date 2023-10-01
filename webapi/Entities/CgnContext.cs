@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using webapi.Entities;
 using webapi.Entities.DataSeeding;
+using webapi.Entities.Entities;
 using webapi.Entities.EntityBases;
 
 namespace cognisseum.Entities

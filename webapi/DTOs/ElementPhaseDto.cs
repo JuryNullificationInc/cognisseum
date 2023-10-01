@@ -5,8 +5,8 @@ namespace webapi.DTOs
 {
     public class ElementPhaseDto : DtoBaseWithImage
     { 
-        public string PhaseName { get; set; }
+        public string Name { get; set; }
 
-        public string PhaseAcronym { get; set; }
+        public string Acronym { get; set; }
     }
 }

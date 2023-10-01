@@ -1,5 +1,5 @@
-﻿using cognisseum.Entities;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using webapi.Entities.Entities;
 
 namespace webapi.Entities.EntityBases
 {

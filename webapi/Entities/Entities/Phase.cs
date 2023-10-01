@@ -1,8 +1,8 @@
 ﻿using webapi.Entities.EntityBases;
 
-namespace cognisseum.Entities
+namespace webapi.Entities.Entities
 {
-    public class CrystalStructure : BaseWithImage
+    public class Phase : BaseWithImage
     {
         public string Name { get; set; }
 

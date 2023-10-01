@@ -1,5 +1,4 @@
-﻿using cognisseum.Entities;
-using CsvHelper;
+﻿using CsvHelper;
 using MathNet.Numerics.LinearAlgebra;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +13,7 @@ using System.Net;
 using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Text.Json;
+using webapi.Entities.Entities;
 using webapi.Entities.EntityBases;
 
 namespace webapi.Entities.DataSeeding

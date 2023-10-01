@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.CodeAnalysis;
 using webapi.Entities.EntityBases;
 
-namespace webapi.Entities
+namespace webapi.Entities.Entities
 {
     public class ElementDiscovery : ElementLinkBase
     {

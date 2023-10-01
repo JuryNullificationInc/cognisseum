@@ -1,6 +1,7 @@
 ﻿using cognisseum.Entities;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using webapi.DTOs;
+using webapi.Entities.Entities;
 
 namespace webapi.Services
 {
