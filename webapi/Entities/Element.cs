@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.CodeAnalysis;
+using webapi.Entities.EntityBases;
 
 namespace cognisseum.Entities
 {

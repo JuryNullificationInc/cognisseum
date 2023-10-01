@@ -1,6 +1,10 @@
-﻿namespace cognisseum.Entities
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using webapi.Entities;
+using webapi.Entities.EntityBases;
+
+namespace cognisseum.Entities
 {
-    public class ElementType : AuditableBase
+    public class ElementType : BaseWithImageAndColor
     {
         public string Name { get; set; }
 

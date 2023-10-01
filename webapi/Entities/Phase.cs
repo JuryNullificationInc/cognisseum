@@ -1,6 +1,8 @@
-﻿namespace cognisseum.Entities
+﻿using webapi.Entities.EntityBases;
+
+namespace cognisseum.Entities
 {
-    public class Phase : AuditableBase
+    public class Phase : BaseWithImage
     {
         public string Name { get; set; }
 

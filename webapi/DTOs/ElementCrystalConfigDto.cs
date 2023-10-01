@@ -1,13 +1,12 @@
 ﻿using System.Drawing;
+using webapi.DTOs.DtoBases;
 
 namespace webapi.DTOs
 {
-    public class ElementCrystalConfig
+    public class ElementCrystalConfigDto : DtoBaseWithImage
     {
-        public Color CrystalColor { get; set; }
+        public string Name { get; set; }
 
-        public string CrystalName { get; set; }
-
-        public string IconPath { get; set; }
+        public string Acronym { get; set; }
     }
 }

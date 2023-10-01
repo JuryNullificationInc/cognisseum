@@ -122,6 +122,9 @@ namespace webapi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(45)");
 
+                    b.Property<string>("ImagePath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
@@ -179,6 +182,9 @@ namespace webapi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(45)");
 
+                    b.Property<string>("ImagePath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
@@ -216,6 +222,7 @@ namespace webapi.Migrations
                             Guid = new Guid("040627c5-e1bd-4da0-b248-7ec23c10e84c"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "common_icons/axe.png",
                             IsActive = true,
                             Name = "Not Applicable",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -230,6 +237,7 @@ namespace webapi.Migrations
                             Guid = new Guid("c5c4bb23-a965-4550-a75d-b1138fe1cae5"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "crystal_icons/bcc.svg",
                             IsActive = true,
                             Name = "Body-Centered Cubic",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -244,6 +252,7 @@ namespace webapi.Migrations
                             Guid = new Guid("b5bd3be7-3669-42c9-890f-5e6586c041da"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "crystal_icons/hex.svg",
                             IsActive = true,
                             Name = "Hexagonal",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -258,6 +267,7 @@ namespace webapi.Migrations
                             Guid = new Guid("eeb2cea1-9b84-451a-ab38-d968c4373ad4"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "crystal_icons/rho.svg",
                             IsActive = true,
                             Name = "Rhombohedral",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -272,6 +282,7 @@ namespace webapi.Migrations
                             Guid = new Guid("9ebc048e-63c3-4a9d-b219-c63742d317fc"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "crystal_icons/fcc.svg",
                             IsActive = true,
                             Name = "Face-Centered Cubic",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -282,10 +293,11 @@ namespace webapi.Migrations
                         new
                         {
                             Id = 6L,
-                            Acronym = "cub",
+                            Acronym = "sc",
                             Guid = new Guid("a7126788-59ca-4527-9e81-503fabcba4c8"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "crystal_icons/sc.svg",
                             IsActive = true,
                             Name = "Cubic",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -300,6 +312,7 @@ namespace webapi.Migrations
                             Guid = new Guid("c7c7e003-9a9e-4643-8389-8ebe9f18c00e"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "crystal_icons/orth.svg",
                             IsActive = true,
                             Name = "Orthorhombic",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -314,6 +327,7 @@ namespace webapi.Migrations
                             Guid = new Guid("7df8cf23-963c-4867-ae0e-49b9f02b0f56"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "crystal_icons/tetr.svg",
                             IsActive = true,
                             Name = "Tetragonal",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -324,24 +338,11 @@ namespace webapi.Migrations
                         new
                         {
                             Id = 9L,
-                            Acronym = "gas",
-                            Guid = new Guid("eff2967c-bed2-4ce5-b748-ab5bfa4febd3"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            Name = "Gas",
-                            TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
-                            TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 10L,
-                            Acronym = "mno",
+                            Acronym = "mon",
                             Guid = new Guid("5f170852-d220-4cb1-a750-80c4f2704212"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "crystal_icons/mon.svg",
                             IsActive = true,
                             Name = "Monoclinic",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -370,6 +371,9 @@ namespace webapi.Migrations
 
                     b.Property<double?>("BoilingPoint")
                         .HasColumnType("float");
+
+                    b.Property<long>("ConfigId")
+                        .HasColumnType("bigint");
 
                     b.Property<double?>("Density")
                         .HasColumnType("float");
@@ -422,6 +426,9 @@ namespace webapi.Migrations
                     b.Property<long>("Period")
                         .HasColumnType("bigint");
 
+                    b.Property<long>("PhaseId")
+                        .HasColumnType("bigint");
+
                     b.Property<float?>("SpecificHeatCapacity")
                         .HasColumnType("real");
 
@@ -445,6 +452,10 @@ namespace webapi.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ConfigId");
+
+                    b.HasIndex("PhaseId");
+
                     b.HasIndex("UserAddedId");
 
                     b.HasIndex("UserModifiedId");
@@ -459,6 +470,7 @@ namespace webapi.Migrations
                             AtomicRadius = 0.79000000000000004,
                             AtomicWeight = 1.0079400000000001,
                             BoilingPoint = 20.280000000000001,
+                            ConfigId = 1L,
                             Density = 8.988E-05,
                             DisplayColumn = 1L,
                             DisplayRow = 1L,
@@ -475,6 +487,7 @@ namespace webapi.Migrations
                             Isotopes = 3L,
                             MeltingPoint = 14.175000000000001,
                             Period = 1L,
+                            PhaseId = 1L,
                             SpecificHeatCapacity = 14.304f,
                             Symbol = "H",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -489,6 +502,7 @@ namespace webapi.Migrations
                             AtomicRadius = 0.48999999999999999,
                             AtomicWeight = 4.0026020000000004,
                             BoilingPoint = 4.2199999999999998,
+                            ConfigId = 1L,
                             Density = 0.0001785,
                             DisplayColumn = 18L,
                             DisplayRow = 1L,
@@ -502,6 +516,7 @@ namespace webapi.Migrations
                             IsActive = true,
                             Isotopes = 5L,
                             Period = 1L,
+                            PhaseId = 1L,
                             SpecificHeatCapacity = 5.193f,
                             Symbol = "He",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -516,6 +531,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.1000000000000001,
                             AtomicWeight = 6.9409999999999998,
                             BoilingPoint = 1615.0,
+                            ConfigId = 2L,
                             Density = 0.53400000000000003,
                             DisplayColumn = 1L,
                             DisplayRow = 2L,
@@ -532,6 +548,7 @@ namespace webapi.Migrations
                             Isotopes = 5L,
                             MeltingPoint = 453.85000000000002,
                             Period = 2L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 3.582f,
                             Symbol = "Li",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -546,6 +563,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.3999999999999999,
                             AtomicWeight = 9.0121819999999992,
                             BoilingPoint = 2742.0,
+                            ConfigId = 3L,
                             Density = 1.8500000000000001,
                             DisplayColumn = 2L,
                             DisplayRow = 2L,
@@ -562,6 +580,7 @@ namespace webapi.Migrations
                             Isotopes = 6L,
                             MeltingPoint = 1560.1500000000001,
                             Period = 2L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 1.825f,
                             Symbol = "Be",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -576,6 +595,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.2,
                             AtomicWeight = 10.811,
                             BoilingPoint = 4200.0,
+                            ConfigId = 4L,
                             Density = 2.3399999999999999,
                             DisplayColumn = 13L,
                             DisplayRow = 2L,
@@ -592,6 +612,7 @@ namespace webapi.Migrations
                             Isotopes = 6L,
                             MeltingPoint = 2573.1500000000001,
                             Period = 2L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 1.026f,
                             Symbol = "B",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -606,6 +627,7 @@ namespace webapi.Migrations
                             AtomicRadius = 0.91000000000000003,
                             AtomicWeight = 12.0107,
                             BoilingPoint = 4300.0,
+                            ConfigId = 3L,
                             Density = 2.2669999999999999,
                             DisplayColumn = 14L,
                             DisplayRow = 2L,
@@ -621,6 +643,7 @@ namespace webapi.Migrations
                             Isotopes = 7L,
                             MeltingPoint = 3948.1500000000001,
                             Period = 2L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.709f,
                             Symbol = "C",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -635,6 +658,7 @@ namespace webapi.Migrations
                             AtomicRadius = 0.75,
                             AtomicWeight = 14.0067,
                             BoilingPoint = 77.359999999999999,
+                            ConfigId = 1L,
                             Density = 0.0012505999999999999,
                             DisplayColumn = 15L,
                             DisplayRow = 2L,
@@ -651,6 +675,7 @@ namespace webapi.Migrations
                             Isotopes = 8L,
                             MeltingPoint = 63.289999999999999,
                             Period = 2L,
+                            PhaseId = 1L,
                             SpecificHeatCapacity = 1.04f,
                             Symbol = "N",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -665,6 +690,7 @@ namespace webapi.Migrations
                             AtomicRadius = 0.65000000000000002,
                             AtomicWeight = 15.9994,
                             BoilingPoint = 90.200000000000003,
+                            ConfigId = 1L,
                             Density = 0.0014289999999999999,
                             DisplayColumn = 16L,
                             DisplayRow = 2L,
@@ -681,6 +707,7 @@ namespace webapi.Migrations
                             Isotopes = 8L,
                             MeltingPoint = 50.5,
                             Period = 2L,
+                            PhaseId = 1L,
                             SpecificHeatCapacity = 0.918f,
                             Symbol = "O",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -695,6 +722,7 @@ namespace webapi.Migrations
                             AtomicRadius = 0.56999999999999995,
                             AtomicWeight = 18.998403199999998,
                             BoilingPoint = 85.030000000000001,
+                            ConfigId = 1L,
                             Density = 0.001696,
                             DisplayColumn = 17L,
                             DisplayRow = 2L,
@@ -711,6 +739,7 @@ namespace webapi.Migrations
                             Isotopes = 6L,
                             MeltingPoint = 53.630000000000003,
                             Period = 2L,
+                            PhaseId = 1L,
                             SpecificHeatCapacity = 0.824f,
                             Symbol = "F",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -725,6 +754,7 @@ namespace webapi.Migrations
                             AtomicRadius = 0.51000000000000001,
                             AtomicWeight = 20.1797,
                             BoilingPoint = 27.07,
+                            ConfigId = 1L,
                             Density = 0.00089990000000000003,
                             DisplayColumn = 18L,
                             DisplayRow = 2L,
@@ -739,6 +769,7 @@ namespace webapi.Migrations
                             Isotopes = 8L,
                             MeltingPoint = 24.702999999999999,
                             Period = 2L,
+                            PhaseId = 1L,
                             SpecificHeatCapacity = 1.03f,
                             Symbol = "Ne",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -753,6 +784,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.2000000000000002,
                             AtomicWeight = 22.989769280000001,
                             BoilingPoint = 1156.0,
+                            ConfigId = 2L,
                             Density = 0.97099999999999997,
                             DisplayColumn = 1L,
                             DisplayRow = 3L,
@@ -769,6 +801,7 @@ namespace webapi.Migrations
                             Isotopes = 7L,
                             MeltingPoint = 371.14999999999998,
                             Period = 3L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 1.228f,
                             Symbol = "Na",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -783,6 +816,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.7,
                             AtomicWeight = 24.305,
                             BoilingPoint = 1363.0,
+                            ConfigId = 3L,
                             Density = 1.738,
                             DisplayColumn = 2L,
                             DisplayRow = 3L,
@@ -799,6 +833,7 @@ namespace webapi.Migrations
                             Isotopes = 8L,
                             MeltingPoint = 923.14999999999998,
                             Period = 3L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 1.023f,
                             Symbol = "Mg",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -813,6 +848,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.8,
                             AtomicWeight = 26.9815386,
                             BoilingPoint = 2792.0,
+                            ConfigId = 5L,
                             Density = 2.698,
                             DisplayColumn = 13L,
                             DisplayRow = 3L,
@@ -829,6 +865,7 @@ namespace webapi.Migrations
                             Isotopes = 8L,
                             MeltingPoint = 933.39999999999998,
                             Period = 3L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.897f,
                             Symbol = "Al",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -843,6 +880,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.5,
                             AtomicWeight = 28.0855,
                             BoilingPoint = 3538.0,
+                            ConfigId = 5L,
                             Density = 2.3296000000000001,
                             DisplayColumn = 14L,
                             DisplayRow = 3L,
@@ -859,6 +897,7 @@ namespace webapi.Migrations
                             Isotopes = 8L,
                             MeltingPoint = 1683.1500000000001,
                             Period = 3L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.705f,
                             Symbol = "Si",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -873,6 +912,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.2,
                             AtomicWeight = 30.973762000000001,
                             BoilingPoint = 553.0,
+                            ConfigId = 6L,
                             Density = 1.8200000000000001,
                             DisplayColumn = 15L,
                             DisplayRow = 3L,
@@ -889,6 +929,7 @@ namespace webapi.Migrations
                             Isotopes = 7L,
                             MeltingPoint = 317.25,
                             Period = 3L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.769f,
                             Symbol = "P",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -903,6 +944,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.1000000000000001,
                             AtomicWeight = 32.064999999999998,
                             BoilingPoint = 717.79999999999995,
+                            ConfigId = 7L,
                             Density = 2.0670000000000002,
                             DisplayColumn = 16L,
                             DisplayRow = 3L,
@@ -919,6 +961,7 @@ namespace webapi.Migrations
                             Isotopes = 10L,
                             MeltingPoint = 388.50999999999999,
                             Period = 3L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.71f,
                             Symbol = "S",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -933,6 +976,7 @@ namespace webapi.Migrations
                             AtomicRadius = 0.96999999999999997,
                             AtomicWeight = 35.453000000000003,
                             BoilingPoint = 239.11000000000001,
+                            ConfigId = 1L,
                             Density = 0.0032139999999999998,
                             DisplayColumn = 17L,
                             DisplayRow = 3L,
@@ -949,6 +993,7 @@ namespace webapi.Migrations
                             Isotopes = 11L,
                             MeltingPoint = 172.31,
                             Period = 3L,
+                            PhaseId = 1L,
                             SpecificHeatCapacity = 0.479f,
                             Symbol = "Cl",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -963,6 +1008,7 @@ namespace webapi.Migrations
                             AtomicRadius = 0.88,
                             AtomicWeight = 39.948,
                             BoilingPoint = 87.299999999999997,
+                            ConfigId = 1L,
                             Density = 0.0017837,
                             DisplayColumn = 18L,
                             DisplayRow = 3L,
@@ -977,6 +1023,7 @@ namespace webapi.Migrations
                             Isotopes = 8L,
                             MeltingPoint = 83.959999999999994,
                             Period = 3L,
+                            PhaseId = 1L,
                             SpecificHeatCapacity = 0.52f,
                             Symbol = "Ar",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -991,6 +1038,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.7999999999999998,
                             AtomicWeight = 39.098300000000002,
                             BoilingPoint = 1032.0,
+                            ConfigId = 2L,
                             Density = 0.86199999999999999,
                             DisplayColumn = 1L,
                             DisplayRow = 4L,
@@ -1007,6 +1055,7 @@ namespace webapi.Migrations
                             Isotopes = 10L,
                             MeltingPoint = 336.5,
                             Period = 4L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.757f,
                             Symbol = "K",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -1021,6 +1070,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.2000000000000002,
                             AtomicWeight = 40.078000000000003,
                             BoilingPoint = 1757.0,
+                            ConfigId = 5L,
                             Density = 1.54,
                             DisplayColumn = 2L,
                             DisplayRow = 4L,
@@ -1037,6 +1087,7 @@ namespace webapi.Migrations
                             Isotopes = 14L,
                             MeltingPoint = 1112.1500000000001,
                             Period = 4L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.647f,
                             Symbol = "Ca",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -1051,6 +1102,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.1000000000000001,
                             AtomicWeight = 44.955911999999998,
                             BoilingPoint = 3109.0,
+                            ConfigId = 3L,
                             Density = 2.9889999999999999,
                             DisplayColumn = 3L,
                             DisplayRow = 4L,
@@ -1067,6 +1119,7 @@ namespace webapi.Migrations
                             Isotopes = 15L,
                             MeltingPoint = 1812.1500000000001,
                             Period = 4L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.568f,
                             Symbol = "Sc",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -1081,6 +1134,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.0,
                             AtomicWeight = 47.866999999999997,
                             BoilingPoint = 3560.0,
+                            ConfigId = 3L,
                             Density = 4.54,
                             DisplayColumn = 4L,
                             DisplayRow = 4L,
@@ -1097,6 +1151,7 @@ namespace webapi.Migrations
                             Isotopes = 9L,
                             MeltingPoint = 1933.1500000000001,
                             Period = 4L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.523f,
                             Symbol = "Ti",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -1111,6 +1166,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.8999999999999999,
                             AtomicWeight = 50.941499999999998,
                             BoilingPoint = 3680.0,
+                            ConfigId = 2L,
                             Density = 6.1100000000000003,
                             DisplayColumn = 5L,
                             DisplayRow = 4L,
@@ -1127,6 +1183,7 @@ namespace webapi.Migrations
                             Isotopes = 9L,
                             MeltingPoint = 2175.1500000000001,
                             Period = 4L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.489f,
                             Symbol = "V",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -1141,6 +1198,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.8999999999999999,
                             AtomicWeight = 51.996099999999998,
                             BoilingPoint = 2944.0,
+                            ConfigId = 2L,
                             Density = 7.1500000000000004,
                             DisplayColumn = 6L,
                             DisplayRow = 4L,
@@ -1157,6 +1215,7 @@ namespace webapi.Migrations
                             Isotopes = 9L,
                             MeltingPoint = 2130.1500000000001,
                             Period = 4L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.449f,
                             Symbol = "Cr",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -1171,6 +1230,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.8,
                             AtomicWeight = 54.938045000000002,
                             BoilingPoint = 2334.0,
+                            ConfigId = 2L,
                             Density = 7.4400000000000004,
                             DisplayColumn = 7L,
                             DisplayRow = 4L,
@@ -1187,6 +1247,7 @@ namespace webapi.Migrations
                             Isotopes = 11L,
                             MeltingPoint = 1519.1500000000001,
                             Period = 4L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.479f,
                             Symbol = "Mn",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -1201,6 +1262,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.7,
                             AtomicWeight = 55.844999999999999,
                             BoilingPoint = 3134.0,
+                            ConfigId = 2L,
                             Density = 7.8739999999999997,
                             DisplayColumn = 8L,
                             DisplayRow = 4L,
@@ -1217,6 +1279,7 @@ namespace webapi.Migrations
                             Isotopes = 10L,
                             MeltingPoint = 1808.1500000000001,
                             Period = 4L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.449f,
                             Symbol = "Fe",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -1231,6 +1294,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.7,
                             AtomicWeight = 58.933194999999998,
                             BoilingPoint = 3200.0,
+                            ConfigId = 3L,
                             Density = 8.8599999999999994,
                             DisplayColumn = 9L,
                             DisplayRow = 4L,
@@ -1247,6 +1311,7 @@ namespace webapi.Migrations
                             Isotopes = 14L,
                             MeltingPoint = 1768.1500000000001,
                             Period = 4L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.421f,
                             Symbol = "Co",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -1261,6 +1326,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.6000000000000001,
                             AtomicWeight = 58.693399999999997,
                             BoilingPoint = 3186.0,
+                            ConfigId = 5L,
                             Density = 8.9120000000000008,
                             DisplayColumn = 10L,
                             DisplayRow = 4L,
@@ -1277,6 +1343,7 @@ namespace webapi.Migrations
                             Isotopes = 11L,
                             MeltingPoint = 1726.1500000000001,
                             Period = 4L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.444f,
                             Symbol = "Ni",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -1291,6 +1358,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.6000000000000001,
                             AtomicWeight = 63.545999999999999,
                             BoilingPoint = 2835.0,
+                            ConfigId = 5L,
                             Density = 8.9600000000000009,
                             DisplayColumn = 11L,
                             DisplayRow = 4L,
@@ -1307,6 +1375,7 @@ namespace webapi.Migrations
                             Isotopes = 11L,
                             MeltingPoint = 1357.75,
                             Period = 4L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.385f,
                             Symbol = "Cu",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -1321,6 +1390,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.5,
                             AtomicWeight = 65.379999999999995,
                             BoilingPoint = 1180.0,
+                            ConfigId = 3L,
                             Density = 7.1340000000000003,
                             DisplayColumn = 12L,
                             DisplayRow = 4L,
@@ -1337,6 +1407,7 @@ namespace webapi.Migrations
                             Isotopes = 15L,
                             MeltingPoint = 692.88,
                             Period = 4L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.388f,
                             Symbol = "Zn",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -1351,6 +1422,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.8,
                             AtomicWeight = 69.722999999999999,
                             BoilingPoint = 2477.0,
+                            ConfigId = 7L,
                             Density = 5.907,
                             DisplayColumn = 13L,
                             DisplayRow = 4L,
@@ -1367,6 +1439,7 @@ namespace webapi.Migrations
                             Isotopes = 14L,
                             MeltingPoint = 302.91000000000003,
                             Period = 4L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.371f,
                             Symbol = "Ga",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 566, DateTimeKind.Local).AddTicks(7830),
@@ -1381,6 +1454,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.5,
                             AtomicWeight = 72.640000000000001,
                             BoilingPoint = 3106.0,
+                            ConfigId = 5L,
                             Density = 5.3230000000000004,
                             DisplayColumn = 14L,
                             DisplayRow = 4L,
@@ -1397,6 +1471,7 @@ namespace webapi.Migrations
                             Isotopes = 17L,
                             MeltingPoint = 1211.45,
                             Period = 4L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.32f,
                             Symbol = "Ge",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1411,6 +1486,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.3,
                             AtomicWeight = 74.921599999999998,
                             BoilingPoint = 887.0,
+                            ConfigId = 4L,
                             Density = 5.7759999999999998,
                             DisplayColumn = 15L,
                             DisplayRow = 4L,
@@ -1427,6 +1503,7 @@ namespace webapi.Migrations
                             Isotopes = 14L,
                             MeltingPoint = 1090.1500000000001,
                             Period = 4L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.329f,
                             Symbol = "As",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1441,6 +1518,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.2,
                             AtomicWeight = 78.959999999999994,
                             BoilingPoint = 958.0,
+                            ConfigId = 3L,
                             Density = 4.8090000000000002,
                             DisplayColumn = 16L,
                             DisplayRow = 4L,
@@ -1457,6 +1535,7 @@ namespace webapi.Migrations
                             Isotopes = 20L,
                             MeltingPoint = 494.14999999999998,
                             Period = 4L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.321f,
                             Symbol = "Se",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1471,6 +1550,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.1000000000000001,
                             AtomicWeight = 79.903999999999996,
                             BoilingPoint = 332.0,
+                            ConfigId = 1L,
                             Density = 3.1219999999999999,
                             DisplayColumn = 17L,
                             DisplayRow = 4L,
@@ -1487,6 +1567,7 @@ namespace webapi.Migrations
                             Isotopes = 19L,
                             MeltingPoint = 266.05000000000001,
                             Period = 4L,
+                            PhaseId = 3L,
                             SpecificHeatCapacity = 0.474f,
                             Symbol = "Br",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1501,6 +1582,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.0,
                             AtomicWeight = 83.798000000000002,
                             BoilingPoint = 119.93000000000001,
+                            ConfigId = 1L,
                             Density = 0.0037330000000000002,
                             DisplayColumn = 18L,
                             DisplayRow = 4L,
@@ -1515,6 +1597,7 @@ namespace webapi.Migrations
                             Isotopes = 23L,
                             MeltingPoint = 115.93000000000001,
                             Period = 4L,
+                            PhaseId = 1L,
                             SpecificHeatCapacity = 0.248f,
                             Symbol = "Kr",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1529,6 +1612,7 @@ namespace webapi.Migrations
                             AtomicRadius = 3.0,
                             AtomicWeight = 85.467799999999997,
                             BoilingPoint = 961.0,
+                            ConfigId = 2L,
                             Density = 1.532,
                             DisplayColumn = 1L,
                             DisplayRow = 5L,
@@ -1545,6 +1629,7 @@ namespace webapi.Migrations
                             Isotopes = 20L,
                             MeltingPoint = 312.79000000000002,
                             Period = 5L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.363f,
                             Symbol = "Rb",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1559,6 +1644,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.5,
                             AtomicWeight = 87.620000000000005,
                             BoilingPoint = 1655.0,
+                            ConfigId = 5L,
                             Density = 2.6400000000000001,
                             DisplayColumn = 2L,
                             DisplayRow = 5L,
@@ -1575,6 +1661,7 @@ namespace webapi.Migrations
                             Isotopes = 18L,
                             MeltingPoint = 1042.1500000000001,
                             Period = 5L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.301f,
                             Symbol = "Sr",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1589,6 +1676,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.2999999999999998,
                             AtomicWeight = 88.905850000000001,
                             BoilingPoint = 3609.0,
+                            ConfigId = 3L,
                             Density = 4.4690000000000003,
                             DisplayColumn = 3L,
                             DisplayRow = 5L,
@@ -1605,6 +1693,7 @@ namespace webapi.Migrations
                             Isotopes = 21L,
                             MeltingPoint = 1799.1500000000001,
                             Period = 5L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.298f,
                             Symbol = "Y",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1619,6 +1708,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.2000000000000002,
                             AtomicWeight = 91.224000000000004,
                             BoilingPoint = 4682.0,
+                            ConfigId = 3L,
                             Density = 6.5060000000000002,
                             DisplayColumn = 4L,
                             DisplayRow = 5L,
@@ -1635,6 +1725,7 @@ namespace webapi.Migrations
                             Isotopes = 20L,
                             MeltingPoint = 2125.1500000000001,
                             Period = 5L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.278f,
                             Symbol = "Zr",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1649,6 +1740,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.1000000000000001,
                             AtomicWeight = 92.906379999999999,
                             BoilingPoint = 5017.0,
+                            ConfigId = 2L,
                             Density = 8.5700000000000003,
                             DisplayColumn = 5L,
                             DisplayRow = 5L,
@@ -1665,6 +1757,7 @@ namespace webapi.Migrations
                             Isotopes = 24L,
                             MeltingPoint = 2741.1500000000001,
                             Period = 5L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.265f,
                             Symbol = "Nb",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1679,6 +1772,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.0,
                             AtomicWeight = 95.959999999999994,
                             BoilingPoint = 4912.0,
+                            ConfigId = 2L,
                             Density = 10.220000000000001,
                             DisplayColumn = 6L,
                             DisplayRow = 5L,
@@ -1695,6 +1789,7 @@ namespace webapi.Migrations
                             Isotopes = 20L,
                             MeltingPoint = 2890.1500000000001,
                             Period = 5L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.251f,
                             Symbol = "Mo",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1709,6 +1804,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.0,
                             AtomicWeight = 98.0,
                             BoilingPoint = 5150.0,
+                            ConfigId = 3L,
                             Density = 11.5,
                             DisplayColumn = 7L,
                             DisplayRow = 5L,
@@ -1725,6 +1821,7 @@ namespace webapi.Migrations
                             Isotopes = 23L,
                             MeltingPoint = 2473.1500000000001,
                             Period = 5L,
+                            PhaseId = 4L,
                             Symbol = "Tc",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1738,6 +1835,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.8999999999999999,
                             AtomicWeight = 101.06999999999999,
                             BoilingPoint = 4423.0,
+                            ConfigId = 3L,
                             Density = 12.369999999999999,
                             DisplayColumn = 8L,
                             DisplayRow = 5L,
@@ -1754,6 +1852,7 @@ namespace webapi.Migrations
                             Isotopes = 16L,
                             MeltingPoint = 2523.1500000000001,
                             Period = 5L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.238f,
                             Symbol = "Ru",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1768,6 +1867,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.8,
                             AtomicWeight = 102.9055,
                             BoilingPoint = 3968.0,
+                            ConfigId = 5L,
                             Density = 12.41,
                             DisplayColumn = 9L,
                             DisplayRow = 5L,
@@ -1784,6 +1884,7 @@ namespace webapi.Migrations
                             Isotopes = 20L,
                             MeltingPoint = 2239.1500000000001,
                             Period = 5L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.243f,
                             Symbol = "Rh",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1798,6 +1899,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.8,
                             AtomicWeight = 106.42,
                             BoilingPoint = 3236.0,
+                            ConfigId = 5L,
                             Density = 12.02,
                             DisplayColumn = 10L,
                             DisplayRow = 5L,
@@ -1814,6 +1916,7 @@ namespace webapi.Migrations
                             Isotopes = 21L,
                             MeltingPoint = 1825.1500000000001,
                             Period = 5L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.244f,
                             Symbol = "Pd",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1828,6 +1931,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.8,
                             AtomicWeight = 107.8682,
                             BoilingPoint = 2435.0,
+                            ConfigId = 5L,
                             Density = 10.500999999999999,
                             DisplayColumn = 11L,
                             DisplayRow = 5L,
@@ -1844,6 +1948,7 @@ namespace webapi.Migrations
                             Isotopes = 27L,
                             MeltingPoint = 1234.1500000000001,
                             Period = 5L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.235f,
                             Symbol = "Ag",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1858,6 +1963,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.7,
                             AtomicWeight = 112.411,
                             BoilingPoint = 1040.0,
+                            ConfigId = 3L,
                             Density = 8.6899999999999995,
                             DisplayColumn = 12L,
                             DisplayRow = 5L,
@@ -1874,6 +1980,7 @@ namespace webapi.Migrations
                             Isotopes = 22L,
                             MeltingPoint = 594.33000000000004,
                             Period = 5L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.232f,
                             Symbol = "Cd",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1888,6 +1995,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.0,
                             AtomicWeight = 114.818,
                             BoilingPoint = 2345.0,
+                            ConfigId = 8L,
                             Density = 7.3099999999999996,
                             DisplayColumn = 13L,
                             DisplayRow = 5L,
@@ -1904,6 +2012,7 @@ namespace webapi.Migrations
                             Isotopes = 34L,
                             MeltingPoint = 429.91000000000003,
                             Period = 5L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.233f,
                             Symbol = "In",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1918,6 +2027,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.7,
                             AtomicWeight = 118.70999999999999,
                             BoilingPoint = 2875.0,
+                            ConfigId = 8L,
                             Density = 7.2869999999999999,
                             DisplayColumn = 14L,
                             DisplayRow = 5L,
@@ -1934,6 +2044,7 @@ namespace webapi.Migrations
                             Isotopes = 28L,
                             MeltingPoint = 505.20999999999998,
                             Period = 5L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.228f,
                             Symbol = "Sn",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1948,6 +2059,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.5,
                             AtomicWeight = 121.76000000000001,
                             BoilingPoint = 1860.0,
+                            ConfigId = 4L,
                             Density = 6.6849999999999996,
                             DisplayColumn = 15L,
                             DisplayRow = 5L,
@@ -1964,6 +2076,7 @@ namespace webapi.Migrations
                             Isotopes = 29L,
                             MeltingPoint = 904.04999999999995,
                             Period = 5L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.207f,
                             Symbol = "Sb",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -1978,6 +2091,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.3999999999999999,
                             AtomicWeight = 127.59999999999999,
                             BoilingPoint = 1261.0,
+                            ConfigId = 3L,
                             Density = 6.2320000000000002,
                             DisplayColumn = 16L,
                             DisplayRow = 5L,
@@ -1994,6 +2108,7 @@ namespace webapi.Migrations
                             Isotopes = 29L,
                             MeltingPoint = 722.79999999999995,
                             Period = 5L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.202f,
                             Symbol = "Te",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2008,6 +2123,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.3,
                             AtomicWeight = 126.90447,
                             BoilingPoint = 457.39999999999998,
+                            ConfigId = 7L,
                             Density = 4.9299999999999997,
                             DisplayColumn = 17L,
                             DisplayRow = 5L,
@@ -2024,6 +2140,7 @@ namespace webapi.Migrations
                             Isotopes = 24L,
                             MeltingPoint = 386.64999999999998,
                             Period = 5L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.214f,
                             Symbol = "I",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2038,6 +2155,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.2,
                             AtomicWeight = 131.29300000000001,
                             BoilingPoint = 165.03,
+                            ConfigId = 1L,
                             Density = 0.0058869999999999999,
                             DisplayColumn = 18L,
                             DisplayRow = 5L,
@@ -2052,6 +2170,7 @@ namespace webapi.Migrations
                             Isotopes = 31L,
                             MeltingPoint = 161.44999999999999,
                             Period = 5L,
+                            PhaseId = 1L,
                             SpecificHeatCapacity = 0.158f,
                             Symbol = "Xe",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2066,6 +2185,7 @@ namespace webapi.Migrations
                             AtomicRadius = 3.2999999999999998,
                             AtomicWeight = 132.9054519,
                             BoilingPoint = 944.0,
+                            ConfigId = 1L,
                             Density = 1.873,
                             DisplayColumn = 1L,
                             DisplayRow = 6L,
@@ -2082,6 +2202,7 @@ namespace webapi.Migrations
                             Isotopes = 22L,
                             MeltingPoint = 301.69999999999999,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.242f,
                             Symbol = "Cs",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2096,6 +2217,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.7999999999999998,
                             AtomicWeight = 137.327,
                             BoilingPoint = 2170.0,
+                            ConfigId = 2L,
                             Density = 3.5939999999999999,
                             DisplayColumn = 2L,
                             DisplayRow = 6L,
@@ -2112,6 +2234,7 @@ namespace webapi.Migrations
                             Isotopes = 25L,
                             MeltingPoint = 1002.15,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.204f,
                             Symbol = "Ba",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2126,6 +2249,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.7000000000000002,
                             AtomicWeight = 138.90547000000001,
                             BoilingPoint = 3737.0,
+                            ConfigId = 3L,
                             Density = 6.1449999999999996,
                             DisplayColumn = 3L,
                             DisplayRow = 8L,
@@ -2142,6 +2266,7 @@ namespace webapi.Migrations
                             Isotopes = 19L,
                             MeltingPoint = 1193.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.195f,
                             Symbol = "La",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2156,6 +2281,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.7000000000000002,
                             AtomicWeight = 140.11600000000001,
                             BoilingPoint = 3716.0,
+                            ConfigId = 5L,
                             Density = 6.7699999999999996,
                             DisplayColumn = 4L,
                             DisplayRow = 8L,
@@ -2172,6 +2298,7 @@ namespace webapi.Migrations
                             Isotopes = 19L,
                             MeltingPoint = 1071.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.192f,
                             Symbol = "Ce",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2186,6 +2313,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.7000000000000002,
                             AtomicWeight = 140.90764999999999,
                             BoilingPoint = 3793.0,
+                            ConfigId = 3L,
                             Density = 6.7729999999999997,
                             DisplayColumn = 5L,
                             DisplayRow = 8L,
@@ -2202,6 +2330,7 @@ namespace webapi.Migrations
                             Isotopes = 15L,
                             MeltingPoint = 1204.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.193f,
                             Symbol = "Pr",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2216,6 +2345,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.6000000000000001,
                             AtomicWeight = 144.24199999999999,
                             BoilingPoint = 3347.0,
+                            ConfigId = 3L,
                             Density = 7.0069999999999997,
                             DisplayColumn = 6L,
                             DisplayRow = 8L,
@@ -2232,6 +2362,7 @@ namespace webapi.Migrations
                             Isotopes = 16L,
                             MeltingPoint = 1289.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.19f,
                             Symbol = "Nd",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2246,6 +2377,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.6000000000000001,
                             AtomicWeight = 145.0,
                             BoilingPoint = 3273.0,
+                            ConfigId = 3L,
                             Density = 7.2599999999999998,
                             DisplayColumn = 7L,
                             DisplayRow = 8L,
@@ -2262,6 +2394,7 @@ namespace webapi.Migrations
                             Isotopes = 14L,
                             MeltingPoint = 1204.1500000000001,
                             Period = 6L,
+                            PhaseId = 4L,
                             Symbol = "Pm",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2275,6 +2408,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.6000000000000001,
                             AtomicWeight = 150.36000000000001,
                             BoilingPoint = 2067.0,
+                            ConfigId = 3L,
                             Density = 7.5199999999999996,
                             DisplayColumn = 8L,
                             DisplayRow = 8L,
@@ -2291,6 +2425,7 @@ namespace webapi.Migrations
                             Isotopes = 17L,
                             MeltingPoint = 1345.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.197f,
                             Symbol = "Sm",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2305,6 +2440,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.6000000000000001,
                             AtomicWeight = 151.964,
                             BoilingPoint = 1802.0,
+                            ConfigId = 2L,
                             Density = 5.2430000000000003,
                             DisplayColumn = 9L,
                             DisplayRow = 8L,
@@ -2321,6 +2457,7 @@ namespace webapi.Migrations
                             Isotopes = 21L,
                             MeltingPoint = 1095.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.182f,
                             Symbol = "Eu",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2335,6 +2472,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.5,
                             AtomicWeight = 157.25,
                             BoilingPoint = 3546.0,
+                            ConfigId = 3L,
                             Density = 7.8949999999999996,
                             DisplayColumn = 10L,
                             DisplayRow = 8L,
@@ -2351,6 +2489,7 @@ namespace webapi.Migrations
                             Isotopes = 17L,
                             MeltingPoint = 1585.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.236f,
                             Symbol = "Gd",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2365,6 +2504,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.5,
                             AtomicWeight = 158.92535000000001,
                             BoilingPoint = 3503.0,
+                            ConfigId = 3L,
                             Density = 8.2289999999999992,
                             DisplayColumn = 11L,
                             DisplayRow = 8L,
@@ -2381,6 +2521,7 @@ namespace webapi.Migrations
                             Isotopes = 24L,
                             MeltingPoint = 1630.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.182f,
                             Symbol = "Tb",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2395,6 +2536,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.5,
                             AtomicWeight = 162.5,
                             BoilingPoint = 2840.0,
+                            ConfigId = 3L,
                             Density = 8.5500000000000007,
                             DisplayColumn = 12L,
                             DisplayRow = 8L,
@@ -2411,6 +2553,7 @@ namespace webapi.Migrations
                             Isotopes = 21L,
                             MeltingPoint = 1680.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.17f,
                             Symbol = "Dy",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2425,6 +2568,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.5,
                             AtomicWeight = 164.93031999999999,
                             BoilingPoint = 2993.0,
+                            ConfigId = 3L,
                             Density = 8.7949999999999999,
                             DisplayColumn = 13L,
                             DisplayRow = 8L,
@@ -2441,6 +2585,7 @@ namespace webapi.Migrations
                             Isotopes = 29L,
                             MeltingPoint = 1743.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.165f,
                             Symbol = "Ho",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2455,6 +2600,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.5,
                             AtomicWeight = 167.25899999999999,
                             BoilingPoint = 3503.0,
+                            ConfigId = 3L,
                             Density = 9.0660000000000007,
                             DisplayColumn = 14L,
                             DisplayRow = 8L,
@@ -2471,6 +2617,7 @@ namespace webapi.Migrations
                             Isotopes = 16L,
                             MeltingPoint = 1795.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.168f,
                             Symbol = "Er",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2485,6 +2632,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.3999999999999999,
                             AtomicWeight = 168.93421000000001,
                             BoilingPoint = 2223.0,
+                            ConfigId = 3L,
                             Density = 9.3209999999999997,
                             DisplayColumn = 15L,
                             DisplayRow = 8L,
@@ -2501,6 +2649,7 @@ namespace webapi.Migrations
                             Isotopes = 18L,
                             MeltingPoint = 1818.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.16f,
                             Symbol = "Tm",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2515,6 +2664,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.3999999999999999,
                             AtomicWeight = 173.054,
                             BoilingPoint = 1469.0,
+                            ConfigId = 5L,
                             Density = 6.9649999999999999,
                             DisplayColumn = 16L,
                             DisplayRow = 8L,
@@ -2531,6 +2681,7 @@ namespace webapi.Migrations
                             Isotopes = 16L,
                             MeltingPoint = 1097.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.155f,
                             Symbol = "Yb",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2545,6 +2696,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.2999999999999998,
                             AtomicWeight = 174.96680000000001,
                             BoilingPoint = 3675.0,
+                            ConfigId = 3L,
                             Density = 9.8399999999999999,
                             DisplayColumn = 17L,
                             DisplayRow = 8L,
@@ -2561,6 +2713,7 @@ namespace webapi.Migrations
                             Isotopes = 22L,
                             MeltingPoint = 1936.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.154f,
                             Symbol = "Lu",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2575,6 +2728,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.2000000000000002,
                             AtomicWeight = 178.49000000000001,
                             BoilingPoint = 4876.0,
+                            ConfigId = 3L,
                             Density = 13.31,
                             DisplayColumn = 4L,
                             DisplayRow = 6L,
@@ -2591,6 +2745,7 @@ namespace webapi.Migrations
                             Isotopes = 17L,
                             MeltingPoint = 2500.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.144f,
                             Symbol = "Hf",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2605,6 +2760,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.1000000000000001,
                             AtomicWeight = 180.94788,
                             BoilingPoint = 5731.0,
+                            ConfigId = 2L,
                             Density = 16.654,
                             DisplayColumn = 5L,
                             DisplayRow = 6L,
@@ -2621,6 +2777,7 @@ namespace webapi.Migrations
                             Isotopes = 19L,
                             MeltingPoint = 3269.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.14f,
                             Symbol = "Ta",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2635,6 +2792,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.0,
                             AtomicWeight = 183.84,
                             BoilingPoint = 5828.0,
+                            ConfigId = 2L,
                             Density = 19.25,
                             DisplayColumn = 6L,
                             DisplayRow = 6L,
@@ -2651,6 +2809,7 @@ namespace webapi.Migrations
                             Isotopes = 22L,
                             MeltingPoint = 3680.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.132f,
                             Symbol = "W",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2665,6 +2824,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.0,
                             AtomicWeight = 186.20699999999999,
                             BoilingPoint = 5869.0,
+                            ConfigId = 3L,
                             Density = 21.02,
                             DisplayColumn = 7L,
                             DisplayRow = 6L,
@@ -2681,6 +2841,7 @@ namespace webapi.Migrations
                             Isotopes = 21L,
                             MeltingPoint = 3453.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.137f,
                             Symbol = "Re",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2695,6 +2856,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.8999999999999999,
                             AtomicWeight = 190.22999999999999,
                             BoilingPoint = 5285.0,
+                            ConfigId = 3L,
                             Density = 22.609999999999999,
                             DisplayColumn = 8L,
                             DisplayRow = 6L,
@@ -2711,6 +2873,7 @@ namespace webapi.Migrations
                             Isotopes = 19L,
                             MeltingPoint = 3300.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.13f,
                             Symbol = "Os",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2725,6 +2888,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.8999999999999999,
                             AtomicWeight = 192.21700000000001,
                             BoilingPoint = 4701.0,
+                            ConfigId = 5L,
                             Density = 22.559999999999999,
                             DisplayColumn = 9L,
                             DisplayRow = 6L,
@@ -2741,6 +2905,7 @@ namespace webapi.Migrations
                             Isotopes = 25L,
                             MeltingPoint = 2716.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.131f,
                             Symbol = "Ir",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2755,6 +2920,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.8,
                             AtomicWeight = 195.084,
                             BoilingPoint = 4098.0,
+                            ConfigId = 5L,
                             Density = 21.460000000000001,
                             DisplayColumn = 10L,
                             DisplayRow = 6L,
@@ -2771,6 +2937,7 @@ namespace webapi.Migrations
                             Isotopes = 32L,
                             MeltingPoint = 2045.1500000000001,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.133f,
                             Symbol = "Pt",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2785,6 +2952,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.8,
                             AtomicWeight = 196.96656899999999,
                             BoilingPoint = 3129.0,
+                            ConfigId = 5L,
                             Density = 19.282,
                             DisplayColumn = 11L,
                             DisplayRow = 6L,
@@ -2801,6 +2969,7 @@ namespace webapi.Migrations
                             Isotopes = 21L,
                             MeltingPoint = 1337.73,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.129f,
                             Symbol = "Au",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2815,6 +2984,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.8,
                             AtomicWeight = 200.59,
                             BoilingPoint = 630.0,
+                            ConfigId = 1L,
                             Density = 13.5336,
                             DisplayColumn = 12L,
                             DisplayRow = 6L,
@@ -2831,6 +3001,7 @@ namespace webapi.Migrations
                             Isotopes = 26L,
                             MeltingPoint = 234.43000000000001,
                             Period = 6L,
+                            PhaseId = 3L,
                             SpecificHeatCapacity = 0.14f,
                             Symbol = "Hg",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2845,6 +3016,7 @@ namespace webapi.Migrations
                             AtomicRadius = 2.1000000000000001,
                             AtomicWeight = 204.38329999999999,
                             BoilingPoint = 1746.0,
+                            ConfigId = 3L,
                             Density = 11.85,
                             DisplayColumn = 13L,
                             DisplayRow = 6L,
@@ -2861,6 +3033,7 @@ namespace webapi.Migrations
                             Isotopes = 28L,
                             MeltingPoint = 577.14999999999998,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.129f,
                             Symbol = "Tl",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2875,6 +3048,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.8,
                             AtomicWeight = 207.19999999999999,
                             BoilingPoint = 2022.0,
+                            ConfigId = 5L,
                             Density = 11.342000000000001,
                             DisplayColumn = 14L,
                             DisplayRow = 6L,
@@ -2891,6 +3065,7 @@ namespace webapi.Migrations
                             Isotopes = 29L,
                             MeltingPoint = 600.75,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.129f,
                             Symbol = "Pb",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2905,6 +3080,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.6000000000000001,
                             AtomicWeight = 208.9804,
                             BoilingPoint = 1837.0,
+                            ConfigId = 4L,
                             Density = 9.8070000000000004,
                             DisplayColumn = 15L,
                             DisplayRow = 6L,
@@ -2921,6 +3097,7 @@ namespace webapi.Migrations
                             Isotopes = 19L,
                             MeltingPoint = 544.66999999999996,
                             Period = 6L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.122f,
                             Symbol = "Bi",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2935,6 +3112,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.5,
                             AtomicWeight = 210.0,
                             BoilingPoint = 1235.0,
+                            ConfigId = 6L,
                             Density = 9.3200000000000003,
                             DisplayColumn = 16L,
                             DisplayRow = 6L,
@@ -2951,6 +3129,7 @@ namespace webapi.Migrations
                             Isotopes = 34L,
                             MeltingPoint = 527.14999999999998,
                             Period = 6L,
+                            PhaseId = 2L,
                             Symbol = "Po",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2964,6 +3143,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.3999999999999999,
                             AtomicWeight = 210.0,
                             BoilingPoint = 610.0,
+                            ConfigId = 1L,
                             Density = 7.0,
                             DisplayColumn = 17L,
                             DisplayRow = 6L,
@@ -2979,6 +3159,7 @@ namespace webapi.Migrations
                             Isotopes = 21L,
                             MeltingPoint = 575.14999999999998,
                             Period = 6L,
+                            PhaseId = 2L,
                             Symbol = "At",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -2992,6 +3173,7 @@ namespace webapi.Migrations
                             AtomicRadius = 1.3,
                             AtomicWeight = 222.0,
                             BoilingPoint = 211.30000000000001,
+                            ConfigId = 1L,
                             Density = 0.0097300000000000008,
                             DisplayColumn = 18L,
                             DisplayRow = 6L,
@@ -3006,6 +3188,7 @@ namespace webapi.Migrations
                             Isotopes = 20L,
                             MeltingPoint = 202.15000000000001,
                             Period = 6L,
+                            PhaseId = 1L,
                             SpecificHeatCapacity = 0.094f,
                             Symbol = "Rn",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -3019,6 +3202,7 @@ namespace webapi.Migrations
                             AtomicNumber = 87L,
                             AtomicWeight = 223.0,
                             BoilingPoint = 950.0,
+                            ConfigId = 2L,
                             Density = 1.8700000000000001,
                             DisplayColumn = 1L,
                             DisplayRow = 7L,
@@ -3035,6 +3219,7 @@ namespace webapi.Migrations
                             Isotopes = 21L,
                             MeltingPoint = 300.14999999999998,
                             Period = 7L,
+                            PhaseId = 2L,
                             Symbol = "Fr",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -3047,6 +3232,7 @@ namespace webapi.Migrations
                             AtomicNumber = 88L,
                             AtomicWeight = 226.0,
                             BoilingPoint = 2010.0,
+                            ConfigId = 2L,
                             Density = 5.5,
                             DisplayColumn = 2L,
                             DisplayRow = 7L,
@@ -3063,6 +3249,7 @@ namespace webapi.Migrations
                             Isotopes = 15L,
                             MeltingPoint = 973.14999999999998,
                             Period = 7L,
+                            PhaseId = 2L,
                             Symbol = "Ra",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -3075,6 +3262,7 @@ namespace webapi.Migrations
                             AtomicNumber = 89L,
                             AtomicWeight = 227.0,
                             BoilingPoint = 3471.0,
+                            ConfigId = 5L,
                             Density = 10.07,
                             DisplayColumn = 3L,
                             DisplayRow = 9L,
@@ -3091,6 +3279,7 @@ namespace webapi.Migrations
                             Isotopes = 11L,
                             MeltingPoint = 1323.1500000000001,
                             Period = 7L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.12f,
                             Symbol = "Ac",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -3104,6 +3293,7 @@ namespace webapi.Migrations
                             AtomicNumber = 90L,
                             AtomicWeight = 232.03806,
                             BoilingPoint = 5061.0,
+                            ConfigId = 5L,
                             Density = 11.720000000000001,
                             DisplayColumn = 4L,
                             DisplayRow = 9L,
@@ -3120,6 +3310,7 @@ namespace webapi.Migrations
                             Isotopes = 12L,
                             MeltingPoint = 2028.1500000000001,
                             Period = 7L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.113f,
                             Symbol = "Th",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -3133,6 +3324,7 @@ namespace webapi.Migrations
                             AtomicNumber = 91L,
                             AtomicWeight = 231.03587999999999,
                             BoilingPoint = 4300.0,
+                            ConfigId = 7L,
                             Density = 15.369999999999999,
                             DisplayColumn = 5L,
                             DisplayRow = 9L,
@@ -3149,6 +3341,7 @@ namespace webapi.Migrations
                             Isotopes = 14L,
                             MeltingPoint = 1873.1500000000001,
                             Period = 7L,
+                            PhaseId = 2L,
                             Symbol = "Pa",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -3161,6 +3354,7 @@ namespace webapi.Migrations
                             AtomicNumber = 92L,
                             AtomicWeight = 238.02891,
                             BoilingPoint = 4404.0,
+                            ConfigId = 7L,
                             Density = 18.949999999999999,
                             DisplayColumn = 6L,
                             DisplayRow = 9L,
@@ -3177,6 +3371,7 @@ namespace webapi.Migrations
                             Isotopes = 15L,
                             MeltingPoint = 1405.1500000000001,
                             Period = 7L,
+                            PhaseId = 2L,
                             SpecificHeatCapacity = 0.116f,
                             Symbol = "U",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -3190,6 +3385,7 @@ namespace webapi.Migrations
                             AtomicNumber = 93L,
                             AtomicWeight = 237.0,
                             BoilingPoint = 4273.0,
+                            ConfigId = 7L,
                             Density = 20.449999999999999,
                             DisplayColumn = 7L,
                             DisplayRow = 9L,
@@ -3206,6 +3402,7 @@ namespace webapi.Migrations
                             Isotopes = 153L,
                             MeltingPoint = 913.14999999999998,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Np",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -3218,6 +3415,7 @@ namespace webapi.Migrations
                             AtomicNumber = 94L,
                             AtomicWeight = 244.0,
                             BoilingPoint = 3501.0,
+                            ConfigId = 9L,
                             Density = 19.84,
                             DisplayColumn = 8L,
                             DisplayRow = 9L,
@@ -3234,6 +3432,7 @@ namespace webapi.Migrations
                             Isotopes = 163L,
                             MeltingPoint = 913.14999999999998,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Pu",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -3246,6 +3445,7 @@ namespace webapi.Migrations
                             AtomicNumber = 95L,
                             AtomicWeight = 243.0,
                             BoilingPoint = 2880.0,
+                            ConfigId = 3L,
                             Density = 13.69,
                             DisplayColumn = 9L,
                             DisplayRow = 9L,
@@ -3262,6 +3462,7 @@ namespace webapi.Migrations
                             Isotopes = 133L,
                             MeltingPoint = 1267.1500000000001,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Am",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -3274,6 +3475,7 @@ namespace webapi.Migrations
                             AtomicNumber = 96L,
                             AtomicWeight = 247.0,
                             BoilingPoint = 3383.0,
+                            ConfigId = 3L,
                             Density = 13.51,
                             DisplayColumn = 10L,
                             DisplayRow = 9L,
@@ -3290,6 +3492,7 @@ namespace webapi.Migrations
                             Isotopes = 133L,
                             MeltingPoint = 1340.1500000000001,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Cm",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 567, DateTimeKind.Local).AddTicks(7820),
@@ -3302,6 +3505,7 @@ namespace webapi.Migrations
                             AtomicNumber = 97L,
                             AtomicWeight = 247.0,
                             BoilingPoint = 983.0,
+                            ConfigId = 3L,
                             Density = 14.789999999999999,
                             DisplayColumn = 11L,
                             DisplayRow = 9L,
@@ -3318,6 +3522,7 @@ namespace webapi.Migrations
                             Isotopes = 83L,
                             MeltingPoint = 1259.1500000000001,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Bk",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3330,6 +3535,7 @@ namespace webapi.Migrations
                             AtomicNumber = 98L,
                             AtomicWeight = 251.0,
                             BoilingPoint = 1173.0,
+                            ConfigId = 3L,
                             Density = 15.1,
                             DisplayColumn = 12L,
                             DisplayRow = 9L,
@@ -3346,6 +3552,7 @@ namespace webapi.Migrations
                             Isotopes = 123L,
                             MeltingPoint = 1925.1500000000001,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Cf",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3357,6 +3564,7 @@ namespace webapi.Migrations
                             Id = 99L,
                             AtomicNumber = 99L,
                             AtomicWeight = 252.0,
+                            ConfigId = 3L,
                             Density = 13.5,
                             DisplayColumn = 13L,
                             DisplayRow = 9L,
@@ -3372,6 +3580,7 @@ namespace webapi.Migrations
                             Isotopes = 123L,
                             MeltingPoint = 1133.1500000000001,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Es",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3383,6 +3592,7 @@ namespace webapi.Migrations
                             Id = 100L,
                             AtomicNumber = 100L,
                             AtomicWeight = 257.0,
+                            ConfigId = 1L,
                             DisplayColumn = 14L,
                             DisplayRow = 9L,
                             ElectronConfiguration = "",
@@ -3396,6 +3606,7 @@ namespace webapi.Migrations
                             IsActive = true,
                             Isotopes = 103L,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Fm",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3407,6 +3618,7 @@ namespace webapi.Migrations
                             Id = 101L,
                             AtomicNumber = 101L,
                             AtomicWeight = 258.0,
+                            ConfigId = 1L,
                             DisplayColumn = 15L,
                             DisplayRow = 9L,
                             ElectronConfiguration = "",
@@ -3420,6 +3632,7 @@ namespace webapi.Migrations
                             IsActive = true,
                             Isotopes = 33L,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Md",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3431,6 +3644,7 @@ namespace webapi.Migrations
                             Id = 102L,
                             AtomicNumber = 102L,
                             AtomicWeight = 259.0,
+                            ConfigId = 1L,
                             DisplayColumn = 16L,
                             DisplayRow = 9L,
                             ElectronConfiguration = "",
@@ -3444,6 +3658,7 @@ namespace webapi.Migrations
                             IsActive = true,
                             Isotopes = 73L,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "No",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3455,6 +3670,7 @@ namespace webapi.Migrations
                             Id = 103L,
                             AtomicNumber = 103L,
                             AtomicWeight = 262.0,
+                            ConfigId = 1L,
                             DisplayColumn = 17L,
                             DisplayRow = 9L,
                             ElectronConfiguration = "",
@@ -3466,6 +3682,7 @@ namespace webapi.Migrations
                             IsActive = true,
                             Isotopes = 203L,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Lr",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3477,6 +3694,7 @@ namespace webapi.Migrations
                             Id = 104L,
                             AtomicNumber = 104L,
                             AtomicWeight = 261.0,
+                            ConfigId = 1L,
                             Density = 18.100000000000001,
                             DisplayColumn = 4L,
                             DisplayRow = 7L,
@@ -3488,6 +3706,7 @@ namespace webapi.Migrations
                             IPModified = "127.0.0.1",
                             IsActive = true,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Rf",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3499,6 +3718,7 @@ namespace webapi.Migrations
                             Id = 105L,
                             AtomicNumber = 105L,
                             AtomicWeight = 262.0,
+                            ConfigId = 1L,
                             Density = 39.0,
                             DisplayColumn = 5L,
                             DisplayRow = 7L,
@@ -3510,6 +3730,7 @@ namespace webapi.Migrations
                             IPModified = "127.0.0.1",
                             IsActive = true,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Db",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3521,6 +3742,7 @@ namespace webapi.Migrations
                             Id = 106L,
                             AtomicNumber = 106L,
                             AtomicWeight = 266.0,
+                            ConfigId = 1L,
                             Density = 35.0,
                             DisplayColumn = 6L,
                             DisplayRow = 7L,
@@ -3532,6 +3754,7 @@ namespace webapi.Migrations
                             IPModified = "127.0.0.1",
                             IsActive = true,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Sg",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3543,6 +3766,7 @@ namespace webapi.Migrations
                             Id = 107L,
                             AtomicNumber = 107L,
                             AtomicWeight = 264.0,
+                            ConfigId = 1L,
                             Density = 37.0,
                             DisplayColumn = 7L,
                             DisplayRow = 7L,
@@ -3554,6 +3778,7 @@ namespace webapi.Migrations
                             IPModified = "127.0.0.1",
                             IsActive = true,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Bh",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3565,6 +3790,7 @@ namespace webapi.Migrations
                             Id = 108L,
                             AtomicNumber = 108L,
                             AtomicWeight = 267.0,
+                            ConfigId = 1L,
                             Density = 41.0,
                             DisplayColumn = 8L,
                             DisplayRow = 7L,
@@ -3576,6 +3802,7 @@ namespace webapi.Migrations
                             IPModified = "127.0.0.1",
                             IsActive = true,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Hs",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3587,6 +3814,7 @@ namespace webapi.Migrations
                             Id = 109L,
                             AtomicNumber = 109L,
                             AtomicWeight = 268.0,
+                            ConfigId = 1L,
                             Density = 35.0,
                             DisplayColumn = 9L,
                             DisplayRow = 7L,
@@ -3598,6 +3826,7 @@ namespace webapi.Migrations
                             IPModified = "127.0.0.1",
                             IsActive = true,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Mt",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3609,6 +3838,7 @@ namespace webapi.Migrations
                             Id = 110L,
                             AtomicNumber = 110L,
                             AtomicWeight = 271.0,
+                            ConfigId = 1L,
                             DisplayColumn = 10L,
                             DisplayRow = 7L,
                             ElectronConfiguration = "",
@@ -3619,6 +3849,7 @@ namespace webapi.Migrations
                             IPModified = "127.0.0.1",
                             IsActive = true,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Ds ",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3630,6 +3861,7 @@ namespace webapi.Migrations
                             Id = 111L,
                             AtomicNumber = 111L,
                             AtomicWeight = 272.0,
+                            ConfigId = 1L,
                             DisplayColumn = 11L,
                             DisplayRow = 7L,
                             ElectronConfiguration = "",
@@ -3640,6 +3872,7 @@ namespace webapi.Migrations
                             IPModified = "127.0.0.1",
                             IsActive = true,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Rg ",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3651,6 +3884,7 @@ namespace webapi.Migrations
                             Id = 112L,
                             AtomicNumber = 112L,
                             AtomicWeight = 285.0,
+                            ConfigId = 1L,
                             DisplayColumn = 12L,
                             DisplayRow = 7L,
                             ElectronConfiguration = "",
@@ -3661,6 +3895,7 @@ namespace webapi.Migrations
                             IPModified = "127.0.0.1",
                             IsActive = true,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Cn ",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3672,6 +3907,7 @@ namespace webapi.Migrations
                             Id = 113L,
                             AtomicNumber = 113L,
                             AtomicWeight = 284.0,
+                            ConfigId = 1L,
                             DisplayColumn = 13L,
                             DisplayRow = 7L,
                             ElectronConfiguration = "",
@@ -3682,6 +3918,7 @@ namespace webapi.Migrations
                             IPModified = "127.0.0.1",
                             IsActive = true,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Uut ",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3693,6 +3930,7 @@ namespace webapi.Migrations
                             Id = 114L,
                             AtomicNumber = 114L,
                             AtomicWeight = 289.0,
+                            ConfigId = 1L,
                             DisplayColumn = 14L,
                             DisplayRow = 7L,
                             ElectronConfiguration = "",
@@ -3703,6 +3941,7 @@ namespace webapi.Migrations
                             IPModified = "127.0.0.1",
                             IsActive = true,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Uuq ",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3714,6 +3953,7 @@ namespace webapi.Migrations
                             Id = 115L,
                             AtomicNumber = 115L,
                             AtomicWeight = 288.0,
+                            ConfigId = 1L,
                             DisplayColumn = 15L,
                             DisplayRow = 7L,
                             ElectronConfiguration = "",
@@ -3724,6 +3964,7 @@ namespace webapi.Migrations
                             IPModified = "127.0.0.1",
                             IsActive = true,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Uup ",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3735,6 +3976,7 @@ namespace webapi.Migrations
                             Id = 116L,
                             AtomicNumber = 116L,
                             AtomicWeight = 292.0,
+                            ConfigId = 1L,
                             DisplayColumn = 16L,
                             DisplayRow = 7L,
                             ElectronConfiguration = "",
@@ -3745,6 +3987,7 @@ namespace webapi.Migrations
                             IPModified = "127.0.0.1",
                             IsActive = true,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Uuh ",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3756,6 +3999,7 @@ namespace webapi.Migrations
                             Id = 117L,
                             AtomicNumber = 117L,
                             AtomicWeight = 295.0,
+                            ConfigId = 1L,
                             DisplayColumn = 17L,
                             DisplayRow = 7L,
                             ElectronConfiguration = "",
@@ -3766,6 +4010,7 @@ namespace webapi.Migrations
                             IPModified = "127.0.0.1",
                             IsActive = true,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Uus ",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3777,6 +4022,7 @@ namespace webapi.Migrations
                             Id = 118L,
                             AtomicNumber = 118L,
                             AtomicWeight = 294.0,
+                            ConfigId = 1L,
                             DisplayColumn = 18L,
                             DisplayRow = 7L,
                             ElectronConfiguration = "",
@@ -3787,6 +4033,7 @@ namespace webapi.Migrations
                             IPModified = "127.0.0.1",
                             IsActive = true,
                             Period = 7L,
+                            PhaseId = 4L,
                             Symbol = "Uuo ",
                             TimeAdded = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
                             TimeModified = new DateTime(2023, 9, 21, 0, 51, 35, 568, DateTimeKind.Local).AddTicks(7820),
@@ -3807,6 +4054,9 @@ namespace webapi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<long>("ColorId")
+                        .HasColumnType("bigint");
+
                     b.Property<Guid>("Guid")
                         .HasColumnType("uniqueidentifier");
 
@@ -3817,6 +4067,9 @@ namespace webapi.Migrations
                     b.Property<string>("IPModified")
                         .IsRequired()
                         .HasColumnType("nvarchar(45)");
+
+                    b.Property<string>("ImagePath")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
@@ -3841,6 +4094,8 @@ namespace webapi.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ColorId");
+
                     b.HasIndex("UserAddedId");
 
                     b.HasIndex("UserModifiedId");
@@ -3852,9 +4107,11 @@ namespace webapi.Migrations
                         {
                             Id = 1L,
                             Acronym = "nmn",
+                            ColorId = 9L,
                             Guid = new Guid("af89504d-ac3f-4ee3-8594-a92b5cb7a646"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "classification_icons/nonmetals.png",
                             IsActive = true,
                             Name = "Nonmetal",
                             TimeAdded = new DateTime(2023, 9, 21, 1, 9, 18, 10, DateTimeKind.Local).AddTicks(7010),
@@ -3866,9 +4123,11 @@ namespace webapi.Migrations
                         {
                             Id = 2L,
                             Acronym = "nbl",
+                            ColorId = 8L,
                             Guid = new Guid("06c587fe-f5fa-4022-a42e-bbbe8319fc8b"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "classification_icons/noble_gases.png",
                             IsActive = true,
                             Name = "Noble Gas",
                             TimeAdded = new DateTime(2023, 9, 21, 1, 9, 18, 10, DateTimeKind.Local).AddTicks(7010),
@@ -3880,9 +4139,11 @@ namespace webapi.Migrations
                         {
                             Id = 3L,
                             Acronym = "mlk",
+                            ColorId = 2L,
                             Guid = new Guid("17565823-480c-4815-a8ab-5ae311dc26b1"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "classification_icons/alkali_metals.png",
                             IsActive = true,
                             Name = "Alkali Metal",
                             TimeAdded = new DateTime(2023, 9, 21, 1, 9, 18, 10, DateTimeKind.Local).AddTicks(7010),
@@ -3894,9 +4155,11 @@ namespace webapi.Migrations
                         {
                             Id = 4L,
                             Acronym = "mea",
+                            ColorId = 3L,
                             Guid = new Guid("475b66ae-cc17-4e7f-93fd-2e7a75a0c01d"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "classification_icons/alkaline_metals.png",
                             IsActive = true,
                             Name = "Alkaline Earth Metal",
                             TimeAdded = new DateTime(2023, 9, 21, 1, 9, 18, 10, DateTimeKind.Local).AddTicks(7010),
@@ -3908,9 +4171,11 @@ namespace webapi.Migrations
                         {
                             Id = 5L,
                             Acronym = "mld",
+                            ColorId = 6L,
                             Guid = new Guid("67b76bd1-97f9-4d5b-81cd-defa8f13f981"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "classification_icons/alkali_metals.png",
                             IsActive = true,
                             Name = "Metalloid",
                             TimeAdded = new DateTime(2023, 9, 21, 1, 9, 18, 10, DateTimeKind.Local).AddTicks(7010),
@@ -3922,9 +4187,11 @@ namespace webapi.Migrations
                         {
                             Id = 6L,
                             Acronym = "hgn",
+                            ColorId = 4L,
                             Guid = new Guid("b5bc3a77-d9db-40a1-9a5a-be57704c4990"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "classification_icons/halogens.png",
                             IsActive = true,
                             Name = "Halogen",
                             TimeAdded = new DateTime(2023, 9, 21, 1, 9, 18, 10, DateTimeKind.Local).AddTicks(7010),
@@ -3936,9 +4203,11 @@ namespace webapi.Migrations
                         {
                             Id = 7L,
                             Acronym = "mtl",
+                            ColorId = 7L,
                             Guid = new Guid("d03c6b63-858f-4933-bbee-415832e17fea"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "classification_icons/metals.png",
                             IsActive = true,
                             Name = "Metal",
                             TimeAdded = new DateTime(2023, 9, 21, 1, 9, 18, 10, DateTimeKind.Local).AddTicks(7010),
@@ -3950,9 +4219,11 @@ namespace webapi.Migrations
                         {
                             Id = 8L,
                             Acronym = "mtt",
+                            ColorId = 11L,
                             Guid = new Guid("7e52eea6-1435-4603-9aa8-1197f61e3582"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "classification_icons/transition_metals.png",
                             IsActive = true,
                             Name = "Transition Metal",
                             TimeAdded = new DateTime(2023, 9, 21, 1, 9, 18, 10, DateTimeKind.Local).AddTicks(7010),
@@ -3964,9 +4235,11 @@ namespace webapi.Migrations
                         {
                             Id = 9L,
                             Acronym = "lan",
+                            ColorId = 5L,
                             Guid = new Guid("238fd4ad-2978-442a-8c4c-e047533af97b"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "classification_icons/lanthanides.png",
                             IsActive = true,
                             Name = "Lanthanide",
                             TimeAdded = new DateTime(2023, 9, 21, 1, 9, 18, 10, DateTimeKind.Local).AddTicks(7010),
@@ -3978,9 +4251,11 @@ namespace webapi.Migrations
                         {
                             Id = 10L,
                             Acronym = "act",
+                            ColorId = 1L,
                             Guid = new Guid("c47f95d2-fab5-4b32-9277-e2cf4412a5c5"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "classification_icons/actinides.png",
                             IsActive = true,
                             Name = "Actinide",
                             TimeAdded = new DateTime(2023, 9, 21, 1, 9, 18, 10, DateTimeKind.Local).AddTicks(7010),
@@ -3992,9 +4267,11 @@ namespace webapi.Migrations
                         {
                             Id = 11L,
                             Acronym = "txa",
+                            ColorId = 10L,
                             Guid = new Guid("0eeb6f30-9539-4e6d-a8f7-89d52d77ee5c"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "classification_icons/transactinides.png",
                             IsActive = true,
                             Name = "Transactinide",
                             TimeAdded = new DateTime(2023, 9, 21, 1, 9, 18, 10, DateTimeKind.Local).AddTicks(7010),
@@ -4006,9 +4283,11 @@ namespace webapi.Migrations
                         {
                             Id = 12L,
                             Acronym = "N/A",
+                            ColorId = 12L,
                             Guid = new Guid("a113012d-35bb-4049-a7b4-2e47f20b479c"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "common_icons/axe.png",
                             IsActive = true,
                             Name = "Not In Any Classification",
                             TimeAdded = new DateTime(2023, 9, 21, 1, 9, 18, 10, DateTimeKind.Local).AddTicks(7010),
@@ -4020,9 +4299,11 @@ namespace webapi.Migrations
                         {
                             Id = 13L,
                             Acronym = "coe",
+                            ColorId = 12L,
                             Guid = new Guid("403c98f2-95c7-45e8-bfaa-f934f2e24583"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "classification_icons/alembic.png",
                             IsActive = true,
                             Name = "Common Organic Element",
                             TimeAdded = new DateTime(2023, 9, 21, 1, 9, 18, 10, DateTimeKind.Local).AddTicks(7010),
@@ -4034,9 +4315,11 @@ namespace webapi.Migrations
                         {
                             Id = 14L,
                             Acronym = "uoe",
+                            ColorId = 12L,
                             Guid = new Guid("a2c960ae-e1fc-454a-adb7-ffc392d63967"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
+                            ImagePath = "classification_icons/test_tube.png",
                             IsActive = true,
                             Name = "Uncommon Organic Element",
                             TimeAdded = new DateTime(2023, 9, 21, 1, 9, 18, 10, DateTimeKind.Local).AddTicks(7010),
@@ -4068,6 +4351,9 @@ namespace webapi.Migrations
                     b.Property<string>("IPModified")
                         .IsRequired()
                         .HasColumnType("nvarchar(45)");
+
+                    b.Property<string>("ImagePath")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
@@ -7905,6 +8191,9 @@ namespace webapi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(45)");
 
+                    b.Property<string>("ImagePath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
@@ -9229,7 +9518,7 @@ namespace webapi.Migrations
                         });
                 });
 
-            modelBuilder.Entity("webapi.Entities.ElementMostStableCrystalConfig", b =>
+            modelBuilder.Entity("webapi.Entities.WebColor", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -9237,11 +9526,9 @@ namespace webapi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
-                    b.Property<long>("CrystalConfigId")
-                        .HasColumnType("bigint");
-
-                    b.Property<long>("ElementId")
-                        .HasColumnType("bigint");
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("Guid")
                         .HasColumnType("uniqueidentifier");
@@ -9256,6 +9543,10 @@ namespace webapi.Migrations
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("TimeAdded")
                         .HasColumnType("datetime2");
@@ -9273,3375 +9564,178 @@ namespace webapi.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CrystalConfigId");
-
-                    b.HasIndex("ElementId");
-
                     b.HasIndex("UserAddedId");
 
                     b.HasIndex("UserModifiedId");
 
-                    b.ToTable("ElementMostStableCrystalConfig", (string)null);
+                    b.ToTable("WebColor", (string)null);
 
                     b.HasData(
                         new
                         {
                             Id = 1L,
-                            CrystalConfigId = 1L,
-                            ElementId = 1L,
-                            Guid = new Guid("03954a2e-052e-47f5-8fb0-79a0bf8ab88b"),
+                            Code = "1dd513",
+                            Guid = new Guid("b5c030b8-e1f1-4d0a-b4c5-63c07df15623"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
                             IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 318, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
+                            Name = "actinides",
+                            TimeAdded = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
+                            TimeModified = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
                             UserAddedId = "1",
                             UserModifiedId = "1"
                         },
                         new
                         {
                             Id = 2L,
-                            CrystalConfigId = 1L,
-                            ElementId = 2L,
-                            Guid = new Guid("c78523a4-e902-4b0a-b5ab-efd5a32f40a3"),
+                            Code = "8d0c63",
+                            Guid = new Guid("ec0dbe34-b7a7-4ec1-aa46-047f342fc1e4"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
                             IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
+                            Name = "alkali metals",
+                            TimeAdded = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
+                            TimeModified = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
                             UserAddedId = "1",
                             UserModifiedId = "1"
                         },
                         new
                         {
                             Id = 3L,
-                            CrystalConfigId = 1L,
-                            ElementId = 7L,
-                            Guid = new Guid("0e8a56f1-d635-4601-8dd7-217cfd4e0e05"),
+                            Code = "dc00fe",
+                            Guid = new Guid("926e7993-a144-4d4e-aa31-691335baa088"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
                             IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
+                            Name = "alkaline metals",
+                            TimeAdded = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
+                            TimeModified = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
                             UserAddedId = "1",
                             UserModifiedId = "1"
                         },
                         new
                         {
                             Id = 4L,
-                            CrystalConfigId = 1L,
-                            ElementId = 8L,
-                            Guid = new Guid("a85a8f34-a29b-4a83-82b8-2d5121e0bc07"),
+                            Code = "1cb8ae",
+                            Guid = new Guid("9ddcd865-b3c9-4d4e-8965-768dde67b4fe"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
                             IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
+                            Name = "halogens",
+                            TimeAdded = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
+                            TimeModified = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
                             UserAddedId = "1",
                             UserModifiedId = "1"
                         },
                         new
                         {
                             Id = 5L,
-                            CrystalConfigId = 1L,
-                            ElementId = 9L,
-                            Guid = new Guid("bb833d6c-f520-4346-9fff-dbc2464e2ffc"),
+                            Code = "f4ff00",
+                            Guid = new Guid("f8653a34-b124-45c0-b183-d64885c02207"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
                             IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
+                            Name = "lanthanides",
+                            TimeAdded = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
+                            TimeModified = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
                             UserAddedId = "1",
                             UserModifiedId = "1"
                         },
                         new
                         {
                             Id = 6L,
-                            CrystalConfigId = 1L,
-                            ElementId = 10L,
-                            Guid = new Guid("46bd351e-f649-401c-96e1-bec5fd9a6536"),
+                            Code = "24ff05",
+                            Guid = new Guid("35488d3c-4c20-41b2-a65c-f0ed6fd63ceb"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
                             IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
+                            Name = "metalloids",
+                            TimeAdded = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
+                            TimeModified = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
                             UserAddedId = "1",
                             UserModifiedId = "1"
                         },
                         new
                         {
                             Id = 7L,
-                            CrystalConfigId = 1L,
-                            ElementId = 17L,
-                            Guid = new Guid("5f945360-b725-4ac0-918c-f0558805b15b"),
+                            Code = "098cdd",
+                            Guid = new Guid("c53e0b32-1846-4573-88f4-27283f424138"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
                             IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
+                            Name = "metals",
+                            TimeAdded = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
+                            TimeModified = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
                             UserAddedId = "1",
                             UserModifiedId = "1"
                         },
                         new
                         {
                             Id = 8L,
-                            CrystalConfigId = 1L,
-                            ElementId = 18L,
-                            Guid = new Guid("c2543793-f11e-4c2f-94fe-9b1e780482a6"),
+                            Code = "ff3838",
+                            Guid = new Guid("73779ee7-17d6-4a81-ae96-f6a8d95b24aa"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
                             IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
+                            Name = "noble gases",
+                            TimeAdded = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
+                            TimeModified = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
                             UserAddedId = "1",
                             UserModifiedId = "1"
                         },
                         new
                         {
                             Id = 9L,
-                            CrystalConfigId = 1L,
-                            ElementId = 35L,
-                            Guid = new Guid("88c2b87d-e356-4e28-bc7c-e96613f8f873"),
+                            Code = "ff9e00",
+                            Guid = new Guid("102103d5-e65a-4ce0-8c6d-6fc426d242a2"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
                             IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
+                            Name = "nonmetals",
+                            TimeAdded = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
+                            TimeModified = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
                             UserAddedId = "1",
                             UserModifiedId = "1"
                         },
                         new
                         {
                             Id = 10L,
-                            CrystalConfigId = 1L,
-                            ElementId = 36L,
-                            Guid = new Guid("c3f1451c-f85e-4062-ac6e-ea0bf042648e"),
+                            Code = "048b28",
+                            Guid = new Guid("6a4e27e3-c2b1-4cb6-95af-71c434f99f01"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
                             IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
+                            Name = "transactinides",
+                            TimeAdded = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
+                            TimeModified = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
                             UserAddedId = "1",
                             UserModifiedId = "1"
                         },
                         new
                         {
                             Id = 11L,
-                            CrystalConfigId = 1L,
-                            ElementId = 55L,
-                            Guid = new Guid("019eb63d-3dfa-48c5-bb85-a881d9700be7"),
+                            Code = "35f7b4",
+                            Guid = new Guid("792c91c1-9510-455e-8e14-0744232725b2"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
                             IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
+                            Name = "transition metals",
+                            TimeAdded = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
+                            TimeModified = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
                             UserAddedId = "1",
                             UserModifiedId = "1"
                         },
                         new
                         {
                             Id = 12L,
-                            CrystalConfigId = 1L,
-                            ElementId = 80L,
-                            Guid = new Guid("0412bb3d-a43f-4bbc-9160-8da92c4a6db3"),
+                            Code = "ffffff",
+                            Guid = new Guid("18377929-a588-4001-a53f-249312029da7"),
                             IPAdded = "127.0.0.1",
                             IPModified = "127.0.0.1",
                             IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 13L,
-                            CrystalConfigId = 1L,
-                            ElementId = 85L,
-                            Guid = new Guid("2a05b2ca-d8a7-4120-986d-565ec7f02b9f"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 14L,
-                            CrystalConfigId = 1L,
-                            ElementId = 86L,
-                            Guid = new Guid("8a6a5eac-d1ec-4b01-b47b-98e97721db9e"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 15L,
-                            CrystalConfigId = 1L,
-                            ElementId = 100L,
-                            Guid = new Guid("6c086e22-f5d6-45b9-8e88-1859dabec86b"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 16L,
-                            CrystalConfigId = 1L,
-                            ElementId = 101L,
-                            Guid = new Guid("90aa88e1-376b-4f28-8455-bb62f302425f"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 17L,
-                            CrystalConfigId = 1L,
-                            ElementId = 102L,
-                            Guid = new Guid("746cb382-fdd8-4e96-a387-8e6ca17cac60"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 18L,
-                            CrystalConfigId = 1L,
-                            ElementId = 103L,
-                            Guid = new Guid("98f2c185-923b-46bf-ab9d-c7da23520440"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 19L,
-                            CrystalConfigId = 1L,
-                            ElementId = 104L,
-                            Guid = new Guid("5b622c45-db74-45ce-a0e8-2751a7d39b30"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 20L,
-                            CrystalConfigId = 1L,
-                            ElementId = 105L,
-                            Guid = new Guid("2d1b7e4f-3991-40be-b961-430b962b674f"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 21L,
-                            CrystalConfigId = 1L,
-                            ElementId = 106L,
-                            Guid = new Guid("78d58914-f74e-440d-a9de-dfeeb62f1af5"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 22L,
-                            CrystalConfigId = 1L,
-                            ElementId = 107L,
-                            Guid = new Guid("ec45bb01-c440-4f67-ac51-9b0da3cb4a12"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 23L,
-                            CrystalConfigId = 1L,
-                            ElementId = 108L,
-                            Guid = new Guid("5752ab16-87ba-4a52-918e-c85e099d4d02"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 24L,
-                            CrystalConfigId = 1L,
-                            ElementId = 109L,
-                            Guid = new Guid("8c0f41dd-efd6-405c-85a0-1586b77aaa90"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 25L,
-                            CrystalConfigId = 1L,
-                            ElementId = 110L,
-                            Guid = new Guid("776be8d1-ab10-414d-b0f5-7e91d56771f9"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 26L,
-                            CrystalConfigId = 1L,
-                            ElementId = 111L,
-                            Guid = new Guid("ada349da-d654-4015-be4b-f72c97a85fc3"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 27L,
-                            CrystalConfigId = 1L,
-                            ElementId = 112L,
-                            Guid = new Guid("b9b06cf5-d4be-4b2b-a67b-0eef31c4308c"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 28L,
-                            CrystalConfigId = 1L,
-                            ElementId = 113L,
-                            Guid = new Guid("14c09f69-5017-4cf8-ae17-2080a6ea28d0"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 29L,
-                            CrystalConfigId = 1L,
-                            ElementId = 114L,
-                            Guid = new Guid("6a856520-23a4-4fcc-ba8c-bc22726a4914"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 30L,
-                            CrystalConfigId = 1L,
-                            ElementId = 115L,
-                            Guid = new Guid("41328c96-ea1f-4c33-99c1-28d35153420f"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 31L,
-                            CrystalConfigId = 1L,
-                            ElementId = 116L,
-                            Guid = new Guid("ba6395a4-6ef4-48ee-9621-5a45ff3a08ee"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 32L,
-                            CrystalConfigId = 1L,
-                            ElementId = 117L,
-                            Guid = new Guid("09d4d98a-a1fd-4fc1-ac58-6501836306be"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 33L,
-                            CrystalConfigId = 1L,
-                            ElementId = 118L,
-                            Guid = new Guid("bbd9fe28-89e9-48c7-8765-b1fe763eafc9"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(1880),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 34L,
-                            CrystalConfigId = 2L,
-                            ElementId = 3L,
-                            Guid = new Guid("e787f9ee-0aa0-4a26-94e2-586f48597094"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 35L,
-                            CrystalConfigId = 2L,
-                            ElementId = 11L,
-                            Guid = new Guid("7ee0df00-d684-4935-a309-ce778fa6160d"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 36L,
-                            CrystalConfigId = 2L,
-                            ElementId = 19L,
-                            Guid = new Guid("a1911ca2-309f-4c1a-9ecd-1e1872791cc3"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 37L,
-                            CrystalConfigId = 2L,
-                            ElementId = 23L,
-                            Guid = new Guid("fd05cb2f-f21b-40d1-bf80-119c71dbef1e"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 38L,
-                            CrystalConfigId = 2L,
-                            ElementId = 24L,
-                            Guid = new Guid("4f5e08a9-41d7-4835-9767-e9a7048ef7a7"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 39L,
-                            CrystalConfigId = 2L,
-                            ElementId = 25L,
-                            Guid = new Guid("2d8d392a-54c8-4754-9447-c5b2df0882bf"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 40L,
-                            CrystalConfigId = 2L,
-                            ElementId = 26L,
-                            Guid = new Guid("791e7104-1fdb-400d-93d9-f3d21c56d029"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 41L,
-                            CrystalConfigId = 2L,
-                            ElementId = 37L,
-                            Guid = new Guid("f903b76b-c1a3-49ae-8d78-62bdbbe8d0fd"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 42L,
-                            CrystalConfigId = 2L,
-                            ElementId = 41L,
-                            Guid = new Guid("37df063b-aec2-48e7-9728-fbe1a5f2d245"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 43L,
-                            CrystalConfigId = 2L,
-                            ElementId = 42L,
-                            Guid = new Guid("702cea53-d772-49b2-9d26-02ec126203cc"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 44L,
-                            CrystalConfigId = 2L,
-                            ElementId = 56L,
-                            Guid = new Guid("cd48bed5-5b9c-4d2d-8215-c58bcdd95446"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 45L,
-                            CrystalConfigId = 2L,
-                            ElementId = 63L,
-                            Guid = new Guid("289fd9b4-8b79-4e6f-8c5e-4ed849808ada"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 46L,
-                            CrystalConfigId = 2L,
-                            ElementId = 73L,
-                            Guid = new Guid("6b25a4d1-ba49-45bb-8e42-d7e5a33285eb"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(4950),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 47L,
-                            CrystalConfigId = 2L,
-                            ElementId = 74L,
-                            Guid = new Guid("ce0e5321-66df-42a9-9706-f2cde7720551"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 48L,
-                            CrystalConfigId = 2L,
-                            ElementId = 87L,
-                            Guid = new Guid("43e2099b-a76d-4c5c-b93a-e3555af8a498"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 49L,
-                            CrystalConfigId = 2L,
-                            ElementId = 88L,
-                            Guid = new Guid("bee6cda0-cdc6-48b6-8399-e4dfa192004c"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 50L,
-                            CrystalConfigId = 3L,
-                            ElementId = 4L,
-                            Guid = new Guid("4d9589a3-1156-4598-af81-7ba0e2eb4d60"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 51L,
-                            CrystalConfigId = 3L,
-                            ElementId = 6L,
-                            Guid = new Guid("79f9e77b-6462-42af-9ca0-7abf55f5e06e"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 52L,
-                            CrystalConfigId = 3L,
-                            ElementId = 12L,
-                            Guid = new Guid("cb788d8b-448a-4700-bfda-8e0cd4bbb16c"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 53L,
-                            CrystalConfigId = 3L,
-                            ElementId = 21L,
-                            Guid = new Guid("f60878ef-f778-4b64-b79f-d85d85e49fb5"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 54L,
-                            CrystalConfigId = 3L,
-                            ElementId = 22L,
-                            Guid = new Guid("e17531cc-8f05-4ed6-aa78-cc79e3c3e745"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 55L,
-                            CrystalConfigId = 3L,
-                            ElementId = 27L,
-                            Guid = new Guid("6b300543-977d-4ba9-8a1f-e4b52f02651d"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 56L,
-                            CrystalConfigId = 3L,
-                            ElementId = 30L,
-                            Guid = new Guid("c808fdae-a72c-409e-a2fc-8669be787857"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 57L,
-                            CrystalConfigId = 3L,
-                            ElementId = 34L,
-                            Guid = new Guid("b76b7556-0f29-4a69-9fb1-89512f1fbb3f"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 58L,
-                            CrystalConfigId = 3L,
-                            ElementId = 39L,
-                            Guid = new Guid("254dcefb-51a2-401d-b3d3-a92c564ae2c5"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 59L,
-                            CrystalConfigId = 3L,
-                            ElementId = 40L,
-                            Guid = new Guid("e0ff8c54-2c19-4e8e-b996-f5556e219f18"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 60L,
-                            CrystalConfigId = 3L,
-                            ElementId = 43L,
-                            Guid = new Guid("0ce34d94-84c8-4417-99e9-b7dc046dd894"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 61L,
-                            CrystalConfigId = 3L,
-                            ElementId = 44L,
-                            Guid = new Guid("ecb7ece9-585e-4476-a69a-d8161be47686"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 62L,
-                            CrystalConfigId = 3L,
-                            ElementId = 48L,
-                            Guid = new Guid("6c072492-cfda-4c7a-b0d4-98fb7951c918"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 63L,
-                            CrystalConfigId = 3L,
-                            ElementId = 52L,
-                            Guid = new Guid("0859c41e-d5d5-46c7-abdf-952d30ce7302"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 64L,
-                            CrystalConfigId = 3L,
-                            ElementId = 57L,
-                            Guid = new Guid("2a5b2ff2-db11-446f-8180-2cc7c4d37fb0"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 65L,
-                            CrystalConfigId = 3L,
-                            ElementId = 59L,
-                            Guid = new Guid("a9d677e9-232f-47d8-be4a-bb6ce6bf18e2"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 66L,
-                            CrystalConfigId = 3L,
-                            ElementId = 60L,
-                            Guid = new Guid("dcf480b8-6d40-4d4c-969f-1506a02066c9"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 67L,
-                            CrystalConfigId = 3L,
-                            ElementId = 61L,
-                            Guid = new Guid("780c1574-228c-461b-afc6-2ab1554344fb"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 68L,
-                            CrystalConfigId = 3L,
-                            ElementId = 62L,
-                            Guid = new Guid("f467b32e-fd2e-4855-bb8b-7b45f2c77e7d"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 69L,
-                            CrystalConfigId = 3L,
-                            ElementId = 64L,
-                            Guid = new Guid("bfb2234a-1027-4c72-98b3-90f68a0df9bf"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 70L,
-                            CrystalConfigId = 3L,
-                            ElementId = 65L,
-                            Guid = new Guid("3dde7968-0d24-4ebc-88d7-d8ad4470548a"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 71L,
-                            CrystalConfigId = 3L,
-                            ElementId = 66L,
-                            Guid = new Guid("b3a0264f-851a-43f4-8613-e494aa78fcc2"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 72L,
-                            CrystalConfigId = 3L,
-                            ElementId = 67L,
-                            Guid = new Guid("58b4764e-b639-4159-ae4c-874e8dc0aea7"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 73L,
-                            CrystalConfigId = 3L,
-                            ElementId = 68L,
-                            Guid = new Guid("05f3547d-8cbb-40bb-a971-4f72474118fd"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 74L,
-                            CrystalConfigId = 3L,
-                            ElementId = 69L,
-                            Guid = new Guid("9ab451fe-4135-4752-9e46-be30b227adbe"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 75L,
-                            CrystalConfigId = 3L,
-                            ElementId = 71L,
-                            Guid = new Guid("367f3004-3e97-4d5c-85b3-38cea8680d63"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 76L,
-                            CrystalConfigId = 3L,
-                            ElementId = 72L,
-                            Guid = new Guid("568b6121-9a17-4c32-a67d-bae9994561ed"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 77L,
-                            CrystalConfigId = 3L,
-                            ElementId = 75L,
-                            Guid = new Guid("448d04e2-61ae-46a7-b7c6-d0c644614660"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 78L,
-                            CrystalConfigId = 3L,
-                            ElementId = 76L,
-                            Guid = new Guid("ac60fc27-a76b-4031-8130-a812a2d10ab9"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 79L,
-                            CrystalConfigId = 3L,
-                            ElementId = 81L,
-                            Guid = new Guid("f3dad583-20ac-4475-a78d-eb60d43dfdd3"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 80L,
-                            CrystalConfigId = 3L,
-                            ElementId = 95L,
-                            Guid = new Guid("dfc4f117-7359-4b2b-a995-2532d78ef35b"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 81L,
-                            CrystalConfigId = 3L,
-                            ElementId = 96L,
-                            Guid = new Guid("9e82f18b-82ed-46fe-be0d-46a51f74cdf6"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 82L,
-                            CrystalConfigId = 3L,
-                            ElementId = 97L,
-                            Guid = new Guid("e21487bb-b44b-4b2e-92af-91c0f8d227ca"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 83L,
-                            CrystalConfigId = 3L,
-                            ElementId = 98L,
-                            Guid = new Guid("c6eaf5ca-3bf5-4ab6-8474-3fef5f0bf0a2"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 84L,
-                            CrystalConfigId = 3L,
-                            ElementId = 99L,
-                            Guid = new Guid("09c0861b-34a9-4af2-bb92-2e9a8013fe64"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 85L,
-                            CrystalConfigId = 4L,
-                            ElementId = 5L,
-                            Guid = new Guid("a6482774-b770-4613-b3f4-7d715fe91963"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 86L,
-                            CrystalConfigId = 4L,
-                            ElementId = 33L,
-                            Guid = new Guid("f815bf19-46c3-430a-a8e7-df5cff4e5d81"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 87L,
-                            CrystalConfigId = 4L,
-                            ElementId = 51L,
-                            Guid = new Guid("da1b4ed7-4e29-4c6e-a79c-8b33d291b770"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 88L,
-                            CrystalConfigId = 4L,
-                            ElementId = 83L,
-                            Guid = new Guid("3bdc2b6c-5861-4a13-83ef-cd790fc10934"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 319, DateTimeKind.Local).AddTicks(6170),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 89L,
-                            CrystalConfigId = 5L,
-                            ElementId = 13L,
-                            Guid = new Guid("47f302cf-9737-4392-9374-fe5513a7426f"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 90L,
-                            CrystalConfigId = 5L,
-                            ElementId = 14L,
-                            Guid = new Guid("fbf17e6e-1de0-4ef5-ac11-9c0215562ee1"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 91L,
-                            CrystalConfigId = 5L,
-                            ElementId = 20L,
-                            Guid = new Guid("8d8bdf78-6848-4e1c-b887-ae68be16f288"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 92L,
-                            CrystalConfigId = 5L,
-                            ElementId = 28L,
-                            Guid = new Guid("c1961184-862e-453b-9cde-b681e25ba371"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 93L,
-                            CrystalConfigId = 5L,
-                            ElementId = 29L,
-                            Guid = new Guid("5d9815de-dff7-4808-985f-4c48fe03bfb0"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 94L,
-                            CrystalConfigId = 5L,
-                            ElementId = 32L,
-                            Guid = new Guid("507ee5c1-35f1-43e2-bfcc-d6d29f03fb23"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 95L,
-                            CrystalConfigId = 5L,
-                            ElementId = 38L,
-                            Guid = new Guid("7aeeb0e6-7121-499d-af0e-62c1f7cf8a48"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 96L,
-                            CrystalConfigId = 5L,
-                            ElementId = 45L,
-                            Guid = new Guid("2e2b3e28-65b7-4db0-b8da-fa717e3ce4c2"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 97L,
-                            CrystalConfigId = 5L,
-                            ElementId = 46L,
-                            Guid = new Guid("0720014f-868b-4f95-9da9-de54b2fd398e"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 98L,
-                            CrystalConfigId = 5L,
-                            ElementId = 47L,
-                            Guid = new Guid("0ea9ee07-5204-4ffa-86e9-7f91e7fd7743"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 99L,
-                            CrystalConfigId = 5L,
-                            ElementId = 58L,
-                            Guid = new Guid("4c85b36b-c34c-4aa3-b5cb-8b2953250eb4"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 100L,
-                            CrystalConfigId = 5L,
-                            ElementId = 70L,
-                            Guid = new Guid("6430d513-5e71-4991-a21c-1b66d56d29f3"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 101L,
-                            CrystalConfigId = 5L,
-                            ElementId = 77L,
-                            Guid = new Guid("e54fbeba-b1c5-4208-9256-68c65702fce9"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 102L,
-                            CrystalConfigId = 5L,
-                            ElementId = 78L,
-                            Guid = new Guid("31c9037e-2318-40b1-9a53-b3e82ec57a5a"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 103L,
-                            CrystalConfigId = 5L,
-                            ElementId = 79L,
-                            Guid = new Guid("dd60fb0d-00ce-4043-adf5-1e8dc72e7faf"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 104L,
-                            CrystalConfigId = 5L,
-                            ElementId = 82L,
-                            Guid = new Guid("0fa8ff1d-3a0e-49e4-8833-917e44051628"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 105L,
-                            CrystalConfigId = 5L,
-                            ElementId = 89L,
-                            Guid = new Guid("d9f0228b-fea5-4c4a-8c0b-42ed78d778bc"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 106L,
-                            CrystalConfigId = 5L,
-                            ElementId = 90L,
-                            Guid = new Guid("943cfa00-1b36-4b9b-90fe-6795ceb80b8e"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 107L,
-                            CrystalConfigId = 6L,
-                            ElementId = 15L,
-                            Guid = new Guid("7e67a65e-eefd-4948-bc6d-3da6248ee7fb"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 108L,
-                            CrystalConfigId = 6L,
-                            ElementId = 84L,
-                            Guid = new Guid("77229286-4b0f-4185-a03d-9dc3d7d93b25"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 109L,
-                            CrystalConfigId = 7L,
-                            ElementId = 16L,
-                            Guid = new Guid("b10dd9b8-86a5-4c99-8dbe-485112041fde"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 110L,
-                            CrystalConfigId = 7L,
-                            ElementId = 31L,
-                            Guid = new Guid("1c01fae1-2e78-486d-b5ce-d72783ca8de5"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 111L,
-                            CrystalConfigId = 7L,
-                            ElementId = 53L,
-                            Guid = new Guid("6d97ac73-e911-464f-8bca-03fac8685ddc"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 112L,
-                            CrystalConfigId = 7L,
-                            ElementId = 91L,
-                            Guid = new Guid("8fb6c0bd-f473-4384-abad-3a7ed4625310"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 113L,
-                            CrystalConfigId = 7L,
-                            ElementId = 92L,
-                            Guid = new Guid("1d3a8c3d-e54b-4ff8-81fb-ac3858de88a0"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 114L,
-                            CrystalConfigId = 7L,
-                            ElementId = 93L,
-                            Guid = new Guid("946f652c-4cdd-41ca-a191-77998bb8c462"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 115L,
-                            CrystalConfigId = 8L,
-                            ElementId = 49L,
-                            Guid = new Guid("5e718629-0b2f-4edc-82e6-5b2a1e5f8ce7"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 116L,
-                            CrystalConfigId = 8L,
-                            ElementId = 50L,
-                            Guid = new Guid("d15805ee-e26e-42b9-8b78-49fbd97c7123"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 117L,
-                            CrystalConfigId = 9L,
-                            ElementId = 54L,
-                            Guid = new Guid("018c1545-273a-4bec-8bd9-6f3effc1ef48"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 118L,
-                            CrystalConfigId = 10L,
-                            ElementId = 94L,
-                            Guid = new Guid("9f1809a4-d55d-428f-b79c-63281a1bbcf9"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        });
-                });
-
-            modelBuilder.Entity("webapi.Entities.ElementSTPPhase", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
-
-                    b.Property<long>("ElementId")
-                        .HasColumnType("bigint");
-
-                    b.Property<Guid>("Guid")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("IPAdded")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(45)");
-
-                    b.Property<string>("IPModified")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(45)");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<long>("PhaseId")
-                        .HasColumnType("bigint");
-
-                    b.Property<DateTime>("TimeAdded")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("TimeModified")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("UserAddedId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("UserModifiedId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ElementId");
-
-                    b.HasIndex("PhaseId");
-
-                    b.HasIndex("UserAddedId");
-
-                    b.HasIndex("UserModifiedId");
-
-                    b.ToTable("ElementSTPPhase", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1L,
-                            ElementId = 1L,
-                            Guid = new Guid("7f01ed44-3c53-4a2d-a995-46a8108e99ea"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 1L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 2L,
-                            ElementId = 2L,
-                            Guid = new Guid("67bef196-90be-480d-bf05-8594864238eb"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 1L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 3L,
-                            ElementId = 7L,
-                            Guid = new Guid("0fdb3278-bb49-46d3-81f6-653a649a25a6"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 1L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 4L,
-                            ElementId = 8L,
-                            Guid = new Guid("2105b5ce-d379-472f-9d94-c29fd572d506"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 1L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 5L,
-                            ElementId = 9L,
-                            Guid = new Guid("c809f588-15e9-4208-aaa0-cfe0b6caac56"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 1L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 6L,
-                            ElementId = 10L,
-                            Guid = new Guid("58487109-a6e4-4341-b88f-252686ce84f2"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 1L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 7L,
-                            ElementId = 17L,
-                            Guid = new Guid("e20d7652-8206-4759-a665-ef2a4d8f1019"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 1L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 8L,
-                            ElementId = 18L,
-                            Guid = new Guid("6a7bd13e-a677-4cde-863d-a736ca03b6a5"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 1L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 9L,
-                            ElementId = 36L,
-                            Guid = new Guid("da8b148a-87d4-4ad0-9192-1cc87157ea6a"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 1L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 10L,
-                            ElementId = 54L,
-                            Guid = new Guid("45bc3f9c-b2e8-4415-842d-8bf3513ae2bc"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 1L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 11L,
-                            ElementId = 86L,
-                            Guid = new Guid("7ea31118-7a21-4a98-91ab-7ad82c0bbeb9"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 1L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 12L,
-                            ElementId = 3L,
-                            Guid = new Guid("67d24a1d-cd92-4b43-97af-841c01ce39e4"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 13L,
-                            ElementId = 4L,
-                            Guid = new Guid("e8755628-606c-4364-96c6-6d3dbcc4ecba"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 14L,
-                            ElementId = 5L,
-                            Guid = new Guid("222e286f-77eb-4721-8526-26d8227d1372"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 15L,
-                            ElementId = 6L,
-                            Guid = new Guid("127ab2ab-7710-4fa2-b7a3-9a341ffb64eb"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 320, DateTimeKind.Local).AddTicks(1180),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 16L,
-                            ElementId = 11L,
-                            Guid = new Guid("68792f55-d31a-4d41-8a75-4d220df7b4d8"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 17L,
-                            ElementId = 12L,
-                            Guid = new Guid("38a8ab45-fb48-44e7-a500-7a7f404d2731"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 18L,
-                            ElementId = 13L,
-                            Guid = new Guid("5977db08-bf4c-4e91-87b1-75101b2ecb10"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 19L,
-                            ElementId = 14L,
-                            Guid = new Guid("9dba798b-f0e7-4c8d-8fc5-6deecdf33f39"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 20L,
-                            ElementId = 15L,
-                            Guid = new Guid("5f47364b-0137-4dfe-a75b-a1874ad616c6"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 21L,
-                            ElementId = 16L,
-                            Guid = new Guid("0456cd73-f094-4a5e-b2df-88b7d7cf4e0f"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 22L,
-                            ElementId = 19L,
-                            Guid = new Guid("f02d625f-0d48-4d44-a4fd-227e733a3e7b"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 23L,
-                            ElementId = 20L,
-                            Guid = new Guid("8c6b033d-5ab9-4b40-829a-c48108d6ab94"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 24L,
-                            ElementId = 21L,
-                            Guid = new Guid("40932b85-8ecc-484d-8c39-40026a3f629f"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 25L,
-                            ElementId = 22L,
-                            Guid = new Guid("20968428-2fe7-4285-bb6c-602ed4ee8c0d"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 26L,
-                            ElementId = 23L,
-                            Guid = new Guid("330d03e5-1fdc-4de0-b44e-a66f353fe6d5"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 27L,
-                            ElementId = 24L,
-                            Guid = new Guid("4e1f5576-d886-4d20-9268-016b1443461d"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 28L,
-                            ElementId = 25L,
-                            Guid = new Guid("483807dc-f9c4-4cc9-8116-95afcc107347"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 29L,
-                            ElementId = 26L,
-                            Guid = new Guid("57a58858-32b6-4152-89ca-6b318e1de294"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 30L,
-                            ElementId = 27L,
-                            Guid = new Guid("b7bb4d37-675d-4704-aa38-2807cc545858"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 31L,
-                            ElementId = 28L,
-                            Guid = new Guid("2c727ca0-60ec-40a7-97a6-1ec5e3201035"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 32L,
-                            ElementId = 29L,
-                            Guid = new Guid("5e135f9a-e59f-42b5-a4f8-cd518813b543"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 33L,
-                            ElementId = 30L,
-                            Guid = new Guid("0d8b1d02-19e2-4ba2-bb9c-32c8625ab08a"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 34L,
-                            ElementId = 31L,
-                            Guid = new Guid("95d629d5-0b7c-4a86-9052-79f177793611"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 35L,
-                            ElementId = 32L,
-                            Guid = new Guid("eb86e6db-42a0-4f28-a3ca-55039dc57739"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 36L,
-                            ElementId = 33L,
-                            Guid = new Guid("c4899636-8135-4132-bdd5-0892ce47de1c"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 37L,
-                            ElementId = 34L,
-                            Guid = new Guid("3f3b1830-2a60-4685-87cd-61f868dd189a"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 38L,
-                            ElementId = 37L,
-                            Guid = new Guid("dee0394c-1b07-472f-bd90-c3bd7db447aa"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 39L,
-                            ElementId = 38L,
-                            Guid = new Guid("efc8f6ba-7f46-4afe-850f-52555b487c31"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 40L,
-                            ElementId = 39L,
-                            Guid = new Guid("347a0576-56a5-45d7-afd0-1b8fadab908a"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 41L,
-                            ElementId = 40L,
-                            Guid = new Guid("e9732ba2-aefe-465d-bc9e-4445d16d19b9"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 42L,
-                            ElementId = 41L,
-                            Guid = new Guid("604a591b-4397-44c7-bf52-07f691e558cc"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 43L,
-                            ElementId = 42L,
-                            Guid = new Guid("717d5eb4-1d03-4fc7-8ee6-329848592bc6"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 44L,
-                            ElementId = 44L,
-                            Guid = new Guid("111675c9-7bc3-4e6a-a129-0ae877cba582"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 45L,
-                            ElementId = 45L,
-                            Guid = new Guid("f22dff83-6059-49bd-aa38-084dd95150b3"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 46L,
-                            ElementId = 46L,
-                            Guid = new Guid("40ed4793-b8e4-47f8-943e-5c82020a8f23"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 47L,
-                            ElementId = 47L,
-                            Guid = new Guid("2202369f-1159-4523-96e3-4f1dd3d0866d"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 48L,
-                            ElementId = 48L,
-                            Guid = new Guid("8ab199a1-ce6e-430e-89f4-c92d47cf3c0c"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 49L,
-                            ElementId = 49L,
-                            Guid = new Guid("5a20b11a-ada4-484c-80d2-e4ab6a9ce712"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 50L,
-                            ElementId = 50L,
-                            Guid = new Guid("b62c6f26-7f76-49cc-8d31-b23048c19640"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 51L,
-                            ElementId = 51L,
-                            Guid = new Guid("0edfef3e-0832-45a7-92d3-f706bb6bd5f2"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 52L,
-                            ElementId = 52L,
-                            Guid = new Guid("06fec8ce-8403-486e-b84c-76ce7221df02"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 53L,
-                            ElementId = 53L,
-                            Guid = new Guid("d26c5dff-1ba1-43ba-815f-6e91ba0f4dac"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 54L,
-                            ElementId = 55L,
-                            Guid = new Guid("d94f6890-d332-472a-ba63-dc8db2412865"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 55L,
-                            ElementId = 56L,
-                            Guid = new Guid("0bb3676d-dfce-4e80-9849-872e724d884b"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 56L,
-                            ElementId = 57L,
-                            Guid = new Guid("c1911125-55ca-4b8c-822e-95f2b4f710ba"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 57L,
-                            ElementId = 58L,
-                            Guid = new Guid("0bb9042b-ba7c-488a-acad-52b2c925dcd6"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 58L,
-                            ElementId = 59L,
-                            Guid = new Guid("b5c71c2e-5880-427f-a39b-88f34be864bd"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 59L,
-                            ElementId = 60L,
-                            Guid = new Guid("2c9e3754-6660-417e-867b-792eb9453dc7"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 60L,
-                            ElementId = 62L,
-                            Guid = new Guid("3ba1ff17-5adb-466d-bbe8-541b3ab54356"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 61L,
-                            ElementId = 63L,
-                            Guid = new Guid("19bd28fe-ce7a-4815-ad83-93a60eec2772"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 62L,
-                            ElementId = 64L,
-                            Guid = new Guid("4399bab4-f27a-4df6-9837-cd94ec905850"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 63L,
-                            ElementId = 65L,
-                            Guid = new Guid("fe3445a0-b9bf-4935-9747-c1657d6a6b4f"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 64L,
-                            ElementId = 66L,
-                            Guid = new Guid("53002dcd-9ec1-4b20-b481-5e35cb9803ae"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 65L,
-                            ElementId = 67L,
-                            Guid = new Guid("1e3ce50d-1c89-4d10-b7d3-56429fb80253"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 66L,
-                            ElementId = 68L,
-                            Guid = new Guid("d5dcb6fe-2417-4ac4-b17c-aa9eea87f660"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 67L,
-                            ElementId = 69L,
-                            Guid = new Guid("e7fd9f4d-f052-471e-93d8-c5821daf2702"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 68L,
-                            ElementId = 70L,
-                            Guid = new Guid("d08520ec-1196-4e04-92e5-a00c55315888"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 69L,
-                            ElementId = 71L,
-                            Guid = new Guid("8d104f21-8561-4719-b22f-b9bedb02ab73"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 70L,
-                            ElementId = 72L,
-                            Guid = new Guid("6c8ad41e-c39b-45bc-a1c1-d400bcc9a971"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 71L,
-                            ElementId = 73L,
-                            Guid = new Guid("e16300a5-1216-433c-a7bb-0ab73ab97350"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 72L,
-                            ElementId = 74L,
-                            Guid = new Guid("8d782891-e774-4870-a5f4-d02278bc7faf"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 73L,
-                            ElementId = 75L,
-                            Guid = new Guid("81743669-d797-498a-9462-c02667f76321"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 74L,
-                            ElementId = 76L,
-                            Guid = new Guid("0cf28ffa-c039-4784-a8c2-a569a64ac4eb"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 75L,
-                            ElementId = 77L,
-                            Guid = new Guid("40bc4e1d-0b52-4135-af47-be4a29964a82"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 76L,
-                            ElementId = 78L,
-                            Guid = new Guid("40ca4c43-1dff-4aaf-8776-d19306b3bb1f"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 77L,
-                            ElementId = 79L,
-                            Guid = new Guid("01d630b5-d091-487d-8ae4-2a6215946bbb"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 78L,
-                            ElementId = 81L,
-                            Guid = new Guid("a465aecd-3d70-4b80-a93a-9fe2d7118a0b"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 79L,
-                            ElementId = 82L,
-                            Guid = new Guid("523bedc6-734f-45b5-a2ab-ef37449fe7b9"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 80L,
-                            ElementId = 83L,
-                            Guid = new Guid("767d5123-d4a1-491e-aeb8-2d179583c848"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 81L,
-                            ElementId = 84L,
-                            Guid = new Guid("205a08d3-e3f8-4997-8cd3-898ffdf78b24"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 82L,
-                            ElementId = 85L,
-                            Guid = new Guid("733e9d75-e378-4f1b-bc97-8ad5b5c22451"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 83L,
-                            ElementId = 87L,
-                            Guid = new Guid("c16b4bae-0d83-4125-ad5c-a74914c608ad"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 84L,
-                            ElementId = 88L,
-                            Guid = new Guid("61791a04-f17c-433d-933d-1a97641931c7"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 85L,
-                            ElementId = 89L,
-                            Guid = new Guid("70252b2a-029a-484b-acdb-b45395097ba0"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 86L,
-                            ElementId = 90L,
-                            Guid = new Guid("59854653-b9f8-492c-8a87-9cddf22dbc4a"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 87L,
-                            ElementId = 91L,
-                            Guid = new Guid("395e7a9f-5709-49cc-ac46-774f64878910"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 88L,
-                            ElementId = 92L,
-                            Guid = new Guid("d8988f9b-2773-41e9-b085-ad302a94f9d2"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 2L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 89L,
-                            ElementId = 35L,
-                            Guid = new Guid("7216d3b7-5aab-486f-b35b-684fffac6c74"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 3L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 90L,
-                            ElementId = 80L,
-                            Guid = new Guid("54e91589-d78b-4828-8fa4-c8637f7471f1"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 3L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 91L,
-                            ElementId = 43L,
-                            Guid = new Guid("8dd4ddcb-e3a4-4f79-a3ef-039c8c12a39d"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 92L,
-                            ElementId = 61L,
-                            Guid = new Guid("ddc5bc4e-b67d-4103-ba35-206356a78670"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 93L,
-                            ElementId = 93L,
-                            Guid = new Guid("cb04021c-776a-4a28-878d-b4a9412e6997"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 94L,
-                            ElementId = 94L,
-                            Guid = new Guid("9ce9f969-803a-4e0c-88ff-7a9eac2d02d8"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 95L,
-                            ElementId = 95L,
-                            Guid = new Guid("58d9e0b3-e995-4b01-aaa6-de10b7fe8a4e"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 96L,
-                            ElementId = 96L,
-                            Guid = new Guid("e4730d72-196a-4280-88e9-beb72c5b982e"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 97L,
-                            ElementId = 97L,
-                            Guid = new Guid("1fd52e99-2850-4d1a-84fc-94b158a4cb1a"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 98L,
-                            ElementId = 98L,
-                            Guid = new Guid("3c588117-ba82-4bc4-8467-2d992f220d3e"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 99L,
-                            ElementId = 99L,
-                            Guid = new Guid("68a86044-6de5-433f-9a3a-3493b8243e2d"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 100L,
-                            ElementId = 100L,
-                            Guid = new Guid("c2005754-9b20-487d-be31-c32e14f6daef"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 101L,
-                            ElementId = 101L,
-                            Guid = new Guid("976585db-a3f9-4255-b357-0ac0c4cfd98b"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 102L,
-                            ElementId = 102L,
-                            Guid = new Guid("92c913ee-f694-4fbf-a775-dcca96d8df30"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 103L,
-                            ElementId = 103L,
-                            Guid = new Guid("055e9843-5b4c-448a-a02f-92dfd05996ff"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 104L,
-                            ElementId = 104L,
-                            Guid = new Guid("118e8980-5d71-4920-8378-043c6959aae2"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 105L,
-                            ElementId = 105L,
-                            Guid = new Guid("36540a19-2b23-4635-8f1c-3a98f40278fd"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 106L,
-                            ElementId = 106L,
-                            Guid = new Guid("dd082649-a1e1-41a3-8f47-269499a0a302"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 107L,
-                            ElementId = 107L,
-                            Guid = new Guid("faa1f508-a061-4970-ba3b-cb51bf455028"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 108L,
-                            ElementId = 108L,
-                            Guid = new Guid("c097d7ed-4b99-4b27-9784-b100c202c78b"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 109L,
-                            ElementId = 109L,
-                            Guid = new Guid("650e76e9-0f44-40dc-b339-773da76a8e8b"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 110L,
-                            ElementId = 110L,
-                            Guid = new Guid("9ff8f389-a1f2-416f-8a32-ed754e263830"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 111L,
-                            ElementId = 111L,
-                            Guid = new Guid("ddfda5b9-5d5c-4792-be3e-dba1c6e7549f"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 112L,
-                            ElementId = 112L,
-                            Guid = new Guid("85b9614f-76b0-482c-93b5-1f72a8311cd1"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 113L,
-                            ElementId = 113L,
-                            Guid = new Guid("fff019d2-3fb1-4357-a053-f6415406d3a2"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 114L,
-                            ElementId = 114L,
-                            Guid = new Guid("c2e8238f-8043-4925-a5fb-a4303a460bbf"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 115L,
-                            ElementId = 115L,
-                            Guid = new Guid("57dc5aa4-e992-441d-9a08-11b2ddaa6cce"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 116L,
-                            ElementId = 116L,
-                            Guid = new Guid("8e8e2fb1-be7c-4a24-8611-57943c170176"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 117L,
-                            ElementId = 117L,
-                            Guid = new Guid("5ec832e2-e4ec-4dd2-bdd9-366c0188ac9a"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            UserAddedId = "1",
-                            UserModifiedId = "1"
-                        },
-                        new
-                        {
-                            Id = 118L,
-                            ElementId = 118L,
-                            Guid = new Guid("a2c33f8c-08e0-478e-946f-46153536a3e8"),
-                            IPAdded = "127.0.0.1",
-                            IPModified = "127.0.0.1",
-                            IsActive = true,
-                            PhaseId = 4L,
-                            TimeAdded = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
-                            TimeModified = new DateTime(2023, 9, 25, 13, 15, 22, 321, DateTimeKind.Local).AddTicks(1220),
+                            Name = "white",
+                            TimeAdded = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
+                            TimeModified = new DateTime(2023, 9, 30, 20, 57, 55, 160, DateTimeKind.Local).AddTicks(7420),
                             UserAddedId = "1",
                             UserModifiedId = "1"
                         });
@@ -12687,6 +9781,18 @@ namespace webapi.Migrations
 
             modelBuilder.Entity("cognisseum.Entities.Element", b =>
                 {
+                    b.HasOne("cognisseum.Entities.CrystalStructure", "CrystalConfig")
+                        .WithMany()
+                        .HasForeignKey("ConfigId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("cognisseum.Entities.Phase", "STPPhase")
+                        .WithMany()
+                        .HasForeignKey("PhaseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "UserAdded")
                         .WithMany()
                         .HasForeignKey("UserAddedId")
@@ -12698,6 +9804,10 @@ namespace webapi.Migrations
                         .HasForeignKey("UserModifiedId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.Navigation("CrystalConfig");
+
+                    b.Navigation("STPPhase");
 
                     b.Navigation("UserAdded");
 
@@ -12706,6 +9816,12 @@ namespace webapi.Migrations
 
             modelBuilder.Entity("cognisseum.Entities.ElementType", b =>
                 {
+                    b.HasOne("webapi.Entities.WebColor", "Color")
+                        .WithMany()
+                        .HasForeignKey("ColorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "UserAdded")
                         .WithMany()
                         .HasForeignKey("UserAddedId")
@@ -12717,6 +9833,8 @@ namespace webapi.Migrations
                         .HasForeignKey("UserModifiedId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.Navigation("Color");
 
                     b.Navigation("UserAdded");
 
@@ -12831,20 +9949,8 @@ namespace webapi.Migrations
                     b.Navigation("UserModified");
                 });
 
-            modelBuilder.Entity("webapi.Entities.ElementMostStableCrystalConfig", b =>
+            modelBuilder.Entity("webapi.Entities.WebColor", b =>
                 {
-                    b.HasOne("cognisseum.Entities.CrystalStructure", "MostStableCrystalConfiguration")
-                        .WithMany()
-                        .HasForeignKey("CrystalConfigId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("cognisseum.Entities.Element", "Element")
-                        .WithMany()
-                        .HasForeignKey("ElementId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "UserAdded")
                         .WithMany()
                         .HasForeignKey("UserAddedId")
@@ -12856,45 +9962,6 @@ namespace webapi.Migrations
                         .HasForeignKey("UserModifiedId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
-
-                    b.Navigation("Element");
-
-                    b.Navigation("MostStableCrystalConfiguration");
-
-                    b.Navigation("UserAdded");
-
-                    b.Navigation("UserModified");
-                });
-
-            modelBuilder.Entity("webapi.Entities.ElementSTPPhase", b =>
-                {
-                    b.HasOne("cognisseum.Entities.Element", "Element")
-                        .WithMany()
-                        .HasForeignKey("ElementId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("cognisseum.Entities.Phase", "STPPhase")
-                        .WithMany()
-                        .HasForeignKey("PhaseId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "UserAdded")
-                        .WithMany()
-                        .HasForeignKey("UserAddedId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "UserModified")
-                        .WithMany()
-                        .HasForeignKey("UserModifiedId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Element");
-
-                    b.Navigation("STPPhase");
 
                     b.Navigation("UserAdded");
 

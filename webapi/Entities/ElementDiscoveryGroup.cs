@@ -1,8 +1,8 @@
-﻿using cognisseum.Entities;
+﻿using webapi.Entities.EntityBases;
 
 namespace webapi.Entities
 {
-    public class ElementDiscoveryGroup : AuditableBase
+    public class ElementDiscoveryGroup : BaseWithImage
     {
         public string Year { get; set; }
 

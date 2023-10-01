@@ -1,13 +1,12 @@
 ﻿using System.Drawing;
+using webapi.DTOs.DtoBases;
 
 namespace webapi.DTOs
 {
-    public class ElementPhaseDto
-    {
-        public Color PhaseColor { get; set; }
-
+    public class ElementPhaseDto : DtoBaseWithImage
+    { 
         public string PhaseName { get; set; }
 
-        public string IconPath { get; set; }
+        public string PhaseAcronym { get; set; }
     }
 }

@@ -34,7 +34,7 @@ namespace cognisseum.Services
 
             foreach (var a in buckets.Keys)
             {
-                var e = GetElementBySymbol(a);
+                var e = GetElementDtoBySymbol(a);
                 if (e != null)
                 {
                     result += (float)e.AtomicWeight * buckets[a];

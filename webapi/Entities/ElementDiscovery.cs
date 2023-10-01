@@ -1,10 +1,11 @@
 ﻿using cognisseum.Entities;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.CodeAnalysis;
+using webapi.Entities.EntityBases;
 
 namespace webapi.Entities
 {
-    public class ElementDiscovery : ElementLinkModel
+    public class ElementDiscovery : ElementLinkBase
     {
         public ElementDiscoveryGroup Discoverers { get; set; }
 

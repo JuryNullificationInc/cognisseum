@@ -1,9 +1,10 @@
 ﻿using cognisseum.Entities;
 using System.ComponentModel.DataAnnotations.Schema;
+using webapi.Entities.EntityBases;
 
 namespace webapi.Entities
 {
-    public class ElementClassification : ElementLinkModel
+    public class ElementClassification : ElementLinkBase
     {
         [ForeignKey("Type")]
         public long TypeId { get; set; }

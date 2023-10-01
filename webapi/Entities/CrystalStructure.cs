@@ -1,6 +1,8 @@
-﻿namespace cognisseum.Entities
+﻿using webapi.Entities.EntityBases;
+
+namespace cognisseum.Entities
 {
-    public class CrystalStructure : AuditableBase
+    public class CrystalStructure : BaseWithImage
     {
         public string Name { get; set; }
 

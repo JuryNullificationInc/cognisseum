@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Net;
 
-namespace cognisseum.Entities
+namespace webapi.Entities.EntityBases
 {
     public class AuditableBase
     {

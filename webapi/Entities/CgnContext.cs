@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using webapi.Entities;
 using webapi.Entities.DataSeeding;
+using webapi.Entities.EntityBases;
 
 namespace cognisseum.Entities
 {
@@ -26,9 +27,7 @@ namespace cognisseum.Entities
 
         public DbSet<ElementClassification> ElementClassifications { get; set; }
 
-        public DbSet<ElementSTPPhase> ElementSTPPhases { get; set; }
-
-        public DbSet<ElementMostStableCrystalConfig> ElementStableCrystalConfigs { get; set; }
+        public DbSet<WebColor> Colors { get; set; }
 
         public void RestrictUserModified<T>(ModelBuilder builder) where T : AuditableBase
             => builder.Entity<T>()
@@ -52,7 +51,7 @@ namespace cognisseum.Entities
             AddEntityTable<T>(builder, name);
         }
 
-        public void RestrictElement<T>(ModelBuilder builder) where T : ElementLinkModel
+        public void RestrictElement<T>(ModelBuilder builder) where T : ElementLinkBase
             => builder.Entity<T>()
             .HasOne(e => e.Element)
             .WithMany()
@@ -68,12 +67,9 @@ namespace cognisseum.Entities
             AddEntity<ElementDiscoveryGroup>(modelBuilder, "ElementDiscoveryGroup");
             AddEntity<ElementType>(modelBuilder, "ElementType");
             AddEntity<ElementClassification>(modelBuilder, "ElementClassification");
-            AddEntity<ElementMostStableCrystalConfig>(modelBuilder, "ElementMostStableCrystalConfig");
-            AddEntity<ElementSTPPhase>(modelBuilder, "ElementSTPPhase");
+            AddEntity<WebColor>(modelBuilder, "WebColor");
 
             RestrictElement<ElementClassification>(modelBuilder);
-            RestrictElement<ElementMostStableCrystalConfig>(modelBuilder);
-            RestrictElement<ElementSTPPhase>(modelBuilder);
 
             var seeder = new DataSeeder(modelBuilder);
 

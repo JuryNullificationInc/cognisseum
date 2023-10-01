@@ -14,7 +14,7 @@ namespace webapi.Controllers
         [HttpGet("element-by-atomic-number")]
         public ActionResult<ElementDto?> ElementByAtomicNumber([Required] long number)
         {
-            return Ok(Srvc.GetElementByAtomicNumber(number));
+            return Ok(Srvc.GetElementDtoByAtomicNumber(number));
         }
 
         private ElementService Srvc { get; set; }

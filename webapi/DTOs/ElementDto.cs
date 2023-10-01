@@ -13,6 +13,12 @@ namespace webapi.DTOs
 
         public double AtomicWeight { get; set; }
 
+        public ElementPhaseDto Phase { get; set; }
+
+        public ElementCrystalConfigDto CrystalConfig { get; set; }
+
+        public IEnumerable<ElementTypeDto> Classifications { get; set; }
+
         public long Period { get; set; }
 
         public long Group { get; set; }

@@ -11,7 +11,7 @@ namespace webapi.Services
         private IEnumerable<long> GetClassificationsByElement(Element e)
             => Db.ElementClassifications.AsQueryable().Where(x => x.ElementId == e.Id).Select(x => x.TypeId).ToList();
 
-        private List<ClassificationDto> GetClassificationDtosByElement(Element e)
+/*        private List<ClassificationDto> GetClassificationDtosByElement(Element e)
             => 
 
         private ElementExtraDto ElementToExtraDto(Element e)
@@ -20,14 +20,14 @@ namespace webapi.Services
             {
 
             }
-        }
+        }*/
 
         private IEnumerable<Element> GetElementsByPred(Func<Element, bool> pred)
             => Db.Elements.AsQueryable().Where(x => pred(x));
 
-        public ElementExtraDto GetElementExtraById(long id)
+/*        public ElementExtraDto GetElementExtraById(long id)
             => ElementToExtraDto(GetElementsByPred(x => x.Id == id).SingleOrDefault());
-
+*/
         private CgnContext Db { get; set; }
     }
 }

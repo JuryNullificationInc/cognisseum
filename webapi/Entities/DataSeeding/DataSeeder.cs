@@ -14,6 +14,7 @@ using System.Net;
 using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Text.Json;
+using webapi.Entities.EntityBases;
 
 namespace webapi.Entities.DataSeeding
 {
@@ -44,24 +45,20 @@ namespace webapi.Entities.DataSeeding
         public void Seed()
         {
             SeedUser();
+            SeedColors();
             SeedPhases();
             SeedCrystalStructures();
             SeedTypes();
             SeedElements();
             SeedDiscoveryGroups();
             SeedDiscoveries();
-            SeedEPhases();
             SeedETypes();
-            SeedECrystals();
         }
 
-        private void SeedECrystals()
-            => SeedThings<ElementMostStableCrystalConfig>("./Entities/DataSeeding/json_data/e_crystals.json");
+        private void SeedColors()
+            => SeedThings<WebColor>("./Entities/DataSeeding/json_data/colors.json");
 
         private void SeedETypes()
-            => SeedThings<ElementSTPPhase>("./Entities/DataSeeding/json_data/e_phases.json");
-
-        private void SeedEPhases()
             => SeedThings<ElementClassification>("./Entities/DataSeeding/json_data/e_types.json");
 
         public void SeedUser()

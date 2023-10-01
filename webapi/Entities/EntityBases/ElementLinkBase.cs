@@ -1,9 +1,9 @@
 ﻿using cognisseum.Entities;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace webapi.Entities
+namespace webapi.Entities.EntityBases
 {
-    public class ElementLinkModel : AuditableBase
+    public class ElementLinkBase : AuditableBase
     {
         [ForeignKey("Element")]
         public long ElementId { get; set; }

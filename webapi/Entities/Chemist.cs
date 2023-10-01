@@ -1,8 +1,9 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using webapi.Entities.EntityBases;
 
 namespace cognisseum.Entities
 {
-    public class Chemist : AuditableBase
+    public class Chemist : BaseWithImage
     {
         [AllowNull]
         public string FirstName { get; set; }
