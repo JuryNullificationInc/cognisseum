@@ -17,6 +17,16 @@ namespace cognisseum.Entities
 
         public long Group { get; set; }
 
+        [ForeignKey("STPPhase")]
+        public long PhaseId { get; set; }
+
+        public Phase STPPhase { get; set; }
+
+        [ForeignKey("CrystalConfig")]
+        public long ConfigId { get; set; }
+
+        public CrystalStructure CrystalConfig { get; set; }
+
         [AllowNull]
         public float? IonicRadius { get; set; }
 

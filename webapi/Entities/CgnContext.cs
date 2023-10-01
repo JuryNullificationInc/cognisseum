@@ -24,6 +24,12 @@ namespace cognisseum.Entities
 
         public DbSet<ElementDiscoveryGroup> ElementDiscoveryGroups { get; set; }
 
+        public DbSet<ElementClassification> ElementClassifications { get; set; }
+
+        public DbSet<ElementSTPPhase> ElementSTPPhases { get; set; }
+
+        public DbSet<ElementMostStableCrystalConfig> ElementStableCrystalConfigs { get; set; }
+
         public void RestrictUserModified<T>(ModelBuilder builder) where T : AuditableBase
             => builder.Entity<T>()
                 .HasOne(e => e.UserModified)

@@ -1,0 +1,134 @@
+[
+  {
+    "name": "actinides",
+    "code": "1dd513",
+    "Id": 1,
+    "Guid": "b5c030b8-e1f1-4d0a-b4c5-63c07df15623",
+    "TimeAdded": "2023-10-01 00:57:55.160742+00:00",
+    "UserAddedId": 1,
+    "TimeModified": "2023-10-01 00:57:55.160742+00:00",
+    "UserModifiedId": 1,
+    "IsActive": true
+  },
+  {
+    "name": "alkali metals",
+    "code": "8d0c63",
+    "Id": 2,
+    "Guid": "ec0dbe34-b7a7-4ec1-aa46-047f342fc1e4",
+    "TimeAdded": "2023-10-01 00:57:55.160742+00:00",
+    "UserAddedId": 1,
+    "TimeModified": "2023-10-01 00:57:55.160742+00:00",
+    "UserModifiedId": 1,
+    "IsActive": true
+  },
+  {
+    "name": "alkaline metals",
+    "code": "dc00fe",
+    "Id": 3,
+    "Guid": "926e7993-a144-4d4e-aa31-691335baa088",
+    "TimeAdded": "2023-10-01 00:57:55.160742+00:00",
+    "UserAddedId": 1,
+    "TimeModified": "2023-10-01 00:57:55.160742+00:00",
+    "UserModifiedId": 1,
+    "IsActive": true
+  },
+  {
+    "name": "halogens",
+    "code": "1cb8ae",
+    "Id": 4,
+    "Guid": "9ddcd865-b3c9-4d4e-8965-768dde67b4fe",
+    "TimeAdded": "2023-10-01 00:57:55.160742+00:00",
+    "UserAddedId": 1,
+    "TimeModified": "2023-10-01 00:57:55.160742+00:00",
+    "UserModifiedId": 1,
+    "IsActive": true
+  },
+  {
+    "name": "lanthanides",
+    "code": "f4ff00",
+    "Id": 5,
+    "Guid": "f8653a34-b124-45c0-b183-d64885c02207",
+    "TimeAdded": "2023-10-01 00:57:55.160742+00:00",
+    "UserAddedId": 1,
+    "TimeModified": "2023-10-01 00:57:55.160742+00:00",
+    "UserModifiedId": 1,
+    "IsActive": true
+  },
+  {
+    "name": "metalloids",
+    "code": "24ff05",
+    "Id": 6,
+    "Guid": "35488d3c-4c20-41b2-a65c-f0ed6fd63ceb",
+    "TimeAdded": "2023-10-01 00:57:55.160742+00:00",
+    "UserAddedId": 1,
+    "TimeModified": "2023-10-01 00:57:55.160742+00:00",
+    "UserModifiedId": 1,
+    "IsActive": true
+  },
+  {
+    "name": "metals",
+    "code": "098cdd",
+    "Id": 7,
+    "Guid": "c53e0b32-1846-4573-88f4-27283f424138",
+    "TimeAdded": "2023-10-01 00:57:55.160742+00:00",
+    "UserAddedId": 1,
+    "TimeModified": "2023-10-01 00:57:55.160742+00:00",
+    "UserModifiedId": 1,
+    "IsActive": true
+  },
+  {
+    "name": "noble gases",
+    "code": "ff3838",
+    "Id": 8,
+    "Guid": "73779ee7-17d6-4a81-ae96-f6a8d95b24aa",
+    "TimeAdded": "2023-10-01 00:57:55.160742+00:00",
+    "UserAddedId": 1,
+    "TimeModified": "2023-10-01 00:57:55.160742+00:00",
+    "UserModifiedId": 1,
+    "IsActive": true
+  },
+  {
+    "name": "nonmetals",
+    "code": "ff9e00",
+    "Id": 9,
+    "Guid": "102103d5-e65a-4ce0-8c6d-6fc426d242a2",
+    "TimeAdded": "2023-10-01 00:57:55.160742+00:00",
+    "UserAddedId": 1,
+    "TimeModified": "2023-10-01 00:57:55.160742+00:00",
+    "UserModifiedId": 1,
+    "IsActive": true
+  },
+  {
+    "name": "transactinides",
+    "code": "048b28",
+    "Id": 10,
+    "Guid": "6a4e27e3-c2b1-4cb6-95af-71c434f99f01",
+    "TimeAdded": "2023-10-01 00:57:55.160742+00:00",
+    "UserAddedId": 1,
+    "TimeModified": "2023-10-01 00:57:55.160742+00:00",
+    "UserModifiedId": 1,
+    "IsActive": true
+  },
+  {
+    "name": "transition metals",
+    "code": "35f7b4",
+    "Id": 11,
+    "Guid": "792c91c1-9510-455e-8e14-0744232725b2",
+    "TimeAdded": "2023-10-01 00:57:55.160742+00:00",
+    "UserAddedId": 1,
+    "TimeModified": "2023-10-01 00:57:55.160742+00:00",
+    "UserModifiedId": 1,
+    "IsActive": true
+  },
+  {
+    "name": "white",
+    "code": "ffffff",
+    "Id": 12,
+    "Guid": "18377929-a588-4001-a53f-249312029da7",
+    "TimeAdded": "2023-10-01 00:57:55.160742+00:00",
+    "UserAddedId": 1,
+    "TimeModified": "2023-10-01 00:57:55.160742+00:00",
+    "UserModifiedId": 1,
+    "IsActive": true
+  }
+]
