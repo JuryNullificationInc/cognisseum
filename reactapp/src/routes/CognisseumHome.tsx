@@ -1,5 +1,9 @@
+import { Box } from "@mui/material";
+
 export default function CognisseumHome() {
 	return (
-		<div>Hello from Cognisseum!</div>
+			<Box>
+				<Box>Hello from Cognisseum!</Box>
+			</Box>
 	);
 }
